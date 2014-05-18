@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MailCore</title>
+  <link href="mailcore.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="normal">
+<p><a href="https://github.com/mronge/MailCore"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a></p>
+<div id="main">
+
+<div id="title-header">
+    <h1>MailCore</h1>
+    <h2>An e-mail library for Mac &amp; iOS</h2>
+    <img src="images/logo.png" alt="logo" />
+</div>
+
+<div id="wrapper">
+    
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li><a href="#whatis">What is MailCore?</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#gettingcode">Getting the Code</a></li>
+<li><a href="#iosadding">Adding MailCore to Your iOS Project</a></li>
+<li><a href="#macadding">Adding MailCore to Your Mac Project</a></li>
+<li><a href="#docs">Documentation</a></li>
+<li><a href="#mailinglist">Mailing List</a></li>
+<li><a href="#apps">Apps Using MailCore</a></li>
+<li><a href="#consulting">Consulting</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<hr />
+
+<h2 id="whatis">What is MailCore?</h2>
+
+<p>MailCore is a Mac and iOS library designed to ease the pain of dealing with e-mail protocols. MailCore makes the process of sending e-mail easy by hiding the nasty details like MIME composition from you. Instead, there is a single method required to send a message. Checking e-mail on an IMAP server is a more complex beast, but MailCore makes the job much simpler by presenting everything as a set of objects like Messages, Folders and Accounts. </p>
+
+<h2 id="example">Example</h2>
+
+<p>This example shows how you can send email using MailCore.</p>
+
+<script src="https://gist.github.com/3893098.js"> </script>
+
+<h2 id="gettingcode">Getting the Code</h2>
+
+<p>The best way to get MailCore is to clone directly from <a href="http://www.github.com/mronge/MailCore/">GitHub</a>. The master branch is under active development but it is still the recommended place to start. Eventually a stable version will be tagged 1.0, but for now work off master. </p>
+
+<pre><code class="bash">git clone https://github.com/mronge/MailCore.git
+cd MailCore/
+git submodule update --init</code></pre>
+
+<h2 id="iosadding">Adding MailCore to Your iOS Project</h2>
+
+<ol>
+<li>First checkout the latest code and make sure you get the required submodules</li>
+<li>Locate MailCore.xcodeproj and add it to your project as a subproject. You can do this by dragging the Mailcore.xcodeproj file into your Xcode project.<br/>
+<img src="images/subproject.png" alt="subproject" /></li>
+<li>Navigate to your app&#8217;s target and switch to your app&#8217;s Build Phases. Once in Build Phases expand &#8220;Link Binary With Libraries&#8221; and click the + button. And add these libraries:</li>
+</ol>
+
+<pre><code class="text">   libmailcore.a
+   libssl.a
+   libsasl2.a
+   libcrypto.a
+   libiconv.dylib
+   CFNetwork.framework</code></pre>
+
+<p><img src="images/libraries.png" alt="libraries" /><br/>
+4. Add &#8220;MailCore iOS&#8221; under &#8220;Target Dependencies&#8221;<br/>
+5. Under your app&#8217;s target, switch to Build Settings. Locate &#8220;Header Search Paths&#8221; in the Build Settings and add <code>&quot;$(BUILT_PRODUCTS_DIR)/../../include&quot;</code><br/>
+6. You are now ready to use MailCore. To use MailCore add <code>#import &lt;MailCore/MailCore.h&gt;</code> to the top of your Objective-C files. </p>
+
+<h2 id="macadding">Adding MailCore to Your Mac Project</h2>
+
+<ol>
+<li>First checkout the latest code and make sure you get the required submodules</li>
+<li>Locate MailCore.xcodeproj and add it to your project as a subproject. You can do this by dragging the Mailcore.xcodeproj file into your Xcode project.</li>
+<li>Navigate to your app&#8217;s target and switch to your app&#8217;s Build Phases. Once in Build Phases expand &#8220;Link Binary With Libraries&#8221; and click the + button. From there add MailCore.framework.</li>
+<li>While still under Build Phases click &#8220;Add Build Phase&#8221; in the lower right and select &#8220;Add Copy Files&#8221;. A new copy files phase will be added, make sure the destination is set to &#8220;Frameworks&#8221;. Now add MailCore.framework to that copy files phase by using the + button.</li>
+<li>Add &#8220;MailCore&#8221; under &#8220;Target Dependencies&#8221;</li>
+<li>You are now ready to use MailCore. To use MailCore add <code>#import &lt;MailCore/MailCore.h&gt;</code> to the top of your Objective-C files.</li>
+</ol>
+
+<h2 id="docs">Documentation</h2>
+
+<p>Begin with the <a href="gettingstarted.html">Getting Started Guide</a> and then take a look at the <a href="api/index.html">API docs</a>. </p>
+
+<p>For those of you coming from an older version of MailCore, take a look at the<a href="https://github.com/mronge/MailCore/wiki/Migrating-to-1.0">migration guide</a>.</p>
+
+<h2 id="mailinglist">Mailing List</h2>
+
+<p>There is a low traffic mailing list hosted on <a href="http://librelist.com/">Librelist</a>.</p>
+
+<ul>
+<li>To join send an email to <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#109;&#x61;&#x69;&#108;&#x63;&#x6f;&#114;&#x65;&#x40;&#108;&#x69;&#x62;&#x72;&#x65;&#x6c;&#105;&#115;&#116;&#x2e;&#99;&#111;&#x6d;">&#x6d;&#97;&#x69;&#108;&#x63;&#111;&#x72;&#101;&#64;&#x6c;&#105;&#x62;&#x72;&#x65;&#108;&#x69;&#x73;&#116;&#46;&#99;&#111;&#x6d;</a> and reply to the confirmation e-mail. To unsubscribe at anytime send an e-mail to <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x6d;&#x61;&#x69;&#x6c;&#x63;&#111;&#x72;&#101;&#x2d;&#117;&#x6e;&#x73;&#117;&#98;&#x73;&#x63;&#114;&#105;&#x62;&#x65;&#64;&#x6c;&#105;&#98;&#114;&#101;&#x6c;&#x69;&#115;&#x74;&#46;&#x63;&#x6f;&#x6d;">&#x6d;&#x61;&#x69;&#x6c;&#x63;&#x6f;&#x72;&#x65;&#45;&#x75;&#110;&#x73;&#x75;&#x62;&#x73;&#99;&#x72;&#105;&#x62;&#x65;&#x40;&#108;&#105;&#98;&#x72;&#101;&#x6c;&#105;&#115;&#116;&#46;&#x63;&#x6f;&#109;</a>.</li>
+<li>Mailing list archives are <a href="http://librelist.com/browser/mailcore/">available.</a></li>
+</ul>
+
+<h2 id="apps">Apps Using MailCore</h2>
+
+<p>If you&#8217;d like your app listed here, please get in touch.</p>
+
+<ul>
+<li>Quicksilver</li>
+<li>Fileboard</li>
+<li>CloudPull</li>
+<li>Remail</li>
+<li>Notify</li>
+<li>FwdMail</li>
+<li>eMailGanizer</li>
+<li>OneMail</li>
+<li>MailArchive</li>
+<li>iPhoto2Gmail</li>
+<li>BackUp Gmail</li>
+</ul>
+
+<h2 id="consulting">Consulting</h2>
+
+<p>Consulting services are available via <a href="http://www.centralatomics.com">Central Atomics</a>. At Central Atomics we have over 10 years of experience developing for Apple platforms and 6 years of experience working with e-mail systems. If you need custom e-mail functionality developed, please get in touch via our website or e-mail Matt directly. </p>
+
+<h2 id="contact">Contact</h2>
+
+<p>If you have any questions please don&#8217;t hesitate to contact me.</p>
+
+<p>Thanks, </p>
+
+<p>Matt Ronge<br/>
+<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x6d;&#x72;&#x6f;&#110;&#x67;&#101;&#64;&#109;&#114;&#x6f;&#x6e;&#103;&#101;&#x2e;&#x63;&#111;&#109;">&#x6d;&#114;&#111;&#110;&#103;&#x65;&#64;&#x6d;&#114;&#111;&#110;&#103;&#101;&#46;&#x63;&#x6f;&#109;</a><br/>
+<a href="http://www.twitter.com/mronge">@mronge</a>
+</p>
+</div>
+<div id="addendum">
+    <p>Logo designed by <a href="http://www.twitter.com/adanperez">Adan Perez</a>. The logo is a modified version of the <a href="http://thenounproject.com/noun/mail/#icon-No91">Mail icon</a> by <a href="http://thenounproject.com">The Noun Project</a>, used under a CC BY license.<br/>
+        &copy; 2012 Matt Ronge. All Rights Reserved. </p>
+</div>
+</div>
+</body>
+</html>

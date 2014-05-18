@@ -1,0 +1,2271 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CTCoreFolder Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore </a></h1>
+				<a id="developerHome" href="../index.html">Central Atomics Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CTCoreFolder Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/lastError">&nbsp;&nbsp;&nbsp;&nbsp;lastError</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/appendMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- appendMessage:</option>
+	
+	<option value="//api/name/check">&nbsp;&nbsp;&nbsp;&nbsp;- check</option>
+	
+	<option value="//api/name/connect">&nbsp;&nbsp;&nbsp;&nbsp;- connect</option>
+	
+	<option value="//api/name/copyMessageWithUID:toPath:">&nbsp;&nbsp;&nbsp;&nbsp;- copyMessageWithUID:toPath:</option>
+	
+	<option value="//api/name/create">&nbsp;&nbsp;&nbsp;&nbsp;- create</option>
+	
+	<option value="//api/name/delete">&nbsp;&nbsp;&nbsp;&nbsp;- delete</option>
+	
+	<option value="//api/name/disconnect">&nbsp;&nbsp;&nbsp;&nbsp;- disconnect</option>
+	
+	<option value="//api/name/expunge">&nbsp;&nbsp;&nbsp;&nbsp;- expunge</option>
+	
+	<option value="//api/name/extensionFlagsForMessage:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- extensionFlagsForMessage:flags:</option>
+	
+	<option value="//api/name/flagsForMessage:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- flagsForMessage:flags:</option>
+	
+	<option value="//api/name/flagsForMessage:flags:extensionFlags:">&nbsp;&nbsp;&nbsp;&nbsp;- flagsForMessage:flags:extensionFlags:</option>
+	
+	<option value="//api/name/idleWithTimeout:">&nbsp;&nbsp;&nbsp;&nbsp;- idleWithTimeout:</option>
+	
+	<option value="//api/name/initWithPath:inAccount:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPath:inAccount:</option>
+	
+	<option value="//api/name/messageWithUID:">&nbsp;&nbsp;&nbsp;&nbsp;- messageWithUID:</option>
+	
+	<option value="//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesFromSequenceNumber:to:withFetchAttributes:</option>
+	
+	<option value="//api/name/messagesFromUID:to:withFetchAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesFromUID:to:withFetchAttributes:</option>
+	
+	<option value="//api/name/messagesWithSequenceNumbers:fetchAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesWithSequenceNumbers:fetchAttributes:</option>
+	
+	<option value="//api/name/messagesWithUIDs:fetchAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesWithUIDs:fetchAttributes:</option>
+	
+	<option value="//api/name/moveMessageWithUID:toPath:">&nbsp;&nbsp;&nbsp;&nbsp;- moveMessageWithUID:toPath:</option>
+	
+	<option value="//api/name/path">&nbsp;&nbsp;&nbsp;&nbsp;- path</option>
+	
+	<option value="//api/name/sequenceNumberForUID:sequenceNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- sequenceNumberForUID:sequenceNumber:</option>
+	
+	<option value="//api/name/setExtensionFlags:forMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- setExtensionFlags:forMessage:</option>
+	
+	<option value="//api/name/setFlags:extensionFlags:forMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- setFlags:extensionFlags:forMessage:</option>
+	
+	<option value="//api/name/setFlags:forMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- setFlags:forMessage:</option>
+	
+	<option value="//api/name/setPath:">&nbsp;&nbsp;&nbsp;&nbsp;- setPath:</option>
+	
+	<option value="//api/name/subscribe">&nbsp;&nbsp;&nbsp;&nbsp;- subscribe</option>
+	
+	<option value="//api/name/totalMessageCount:">&nbsp;&nbsp;&nbsp;&nbsp;- totalMessageCount:</option>
+	
+	<option value="//api/name/uidNext">&nbsp;&nbsp;&nbsp;&nbsp;- uidNext</option>
+	
+	<option value="//api/name/uidValidity">&nbsp;&nbsp;&nbsp;&nbsp;- uidValidity</option>
+	
+	<option value="//api/name/unreadMessageCount:">&nbsp;&nbsp;&nbsp;&nbsp;- unreadMessageCount:</option>
+	
+	<option value="//api/name/unsubscribe">&nbsp;&nbsp;&nbsp;&nbsp;- unsubscribe</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastError">lastError</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendMessage:">appendMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/check">check</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connect">connect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyMessageWithUID:toPath:">copyMessageWithUID:toPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create">create</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete">delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnect">disconnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expunge">expunge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/extensionFlagsForMessage:flags:">extensionFlagsForMessage:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flagsForMessage:flags:">flagsForMessage:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flagsForMessage:flags:extensionFlags:">flagsForMessage:flags:extensionFlags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idleWithTimeout:">idleWithTimeout:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPath:inAccount:">initWithPath:inAccount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageWithUID:">messageWithUID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">messagesFromSequenceNumber:to:withFetchAttributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesFromUID:to:withFetchAttributes:">messagesFromUID:to:withFetchAttributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesWithSequenceNumbers:fetchAttributes:">messagesWithSequenceNumbers:fetchAttributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesWithUIDs:fetchAttributes:">messagesWithUIDs:fetchAttributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveMessageWithUID:toPath:">moveMessageWithUID:toPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/path">path</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceNumberForUID:sequenceNumber:">sequenceNumberForUID:sequenceNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setExtensionFlags:forMessage:">setExtensionFlags:forMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFlags:extensionFlags:forMessage:">setFlags:extensionFlags:forMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFlags:forMessage:">setFlags:forMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPath:">setPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribe">subscribe</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalMessageCount:">totalMessageCount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uidNext">uidNext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uidValidity">uidValidity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unreadMessageCount:">unreadMessageCount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsubscribe">unsubscribe</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CTCoreFolder Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CTCoreFolder Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CTCoreFolder.h<br />CTCoreFolder.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CTCoreFolder is the class used to get and set attributes for a server side folder. It is also the
+class used to get a list of messages from the server. You need to make sure and establish a connection
+first by calling <a href="#//api/name/connect">connect</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastError">&nbsp;&nbsp;lastError</a></code>
+		<span class="tooltip"><p>If an error occurred (nil or return of NO) call this method to get the error</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithPath:inAccount:">&ndash;&nbsp;initWithPath:inAccount:</a></code>
+		<span class="tooltip"><p>This method is used to initialize a folder. This method or the
+method in <a href="../Classes/CTCoreAccount.html">CTCoreAccount</a> folderWithPath can be used to setup a folder.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connect">&ndash;&nbsp;connect</a></code>
+		<span class="tooltip"><p>This initiates the connection after the folder has been initalized.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnect">&ndash;&nbsp;disconnect</a></code>
+		<span class="tooltip"><p>This method terminates the connection</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageWithUID:">&ndash;&nbsp;messageWithUID:</a></code>
+		<span class="tooltip"><p>This will return the message from this folder with the UID that was passed in.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">&ndash;&nbsp;messagesFromSequenceNumber:to:withFetchAttributes:</a></code>
+		<span class="tooltip"><p>Use this method to download message lists from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesFromUID:to:withFetchAttributes:">&ndash;&nbsp;messagesFromUID:to:withFetchAttributes:</a></code>
+		<span class="tooltip"><p>Use this method to download message lists from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesWithSequenceNumbers:fetchAttributes:">&ndash;&nbsp;messagesWithSequenceNumbers:fetchAttributes:</a></code>
+		<span class="tooltip"><p>Use this method to download message lists from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesWithUIDs:fetchAttributes:">&ndash;&nbsp;messagesWithUIDs:fetchAttributes:</a></code>
+		<span class="tooltip"><p>Use this method to download message lists from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceNumberForUID:sequenceNumber:">&ndash;&nbsp;sequenceNumberForUID:sequenceNumber:</a></code>
+		<span class="tooltip"><p>Pulls the sequence number for the message with the specified uid.
+It does not perform UID validation, and the sequence ID is only
+valid per session.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/check">&ndash;&nbsp;check</a></code>
+		<span class="tooltip"><p>Perform an IMAP check command</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/path">&ndash;&nbsp;path</a></code>
+		<span class="tooltip"><p>The entire path of the folder.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPath:">&ndash;&nbsp;setPath:</a></code>
+		<span class="tooltip"><p>This will change the <a href="#//api/name/path">path</a> of the folder.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idleWithTimeout:">&ndash;&nbsp;idleWithTimeout:</a></code>
+		<span class="tooltip"><p>Sends the idle command to the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create">&ndash;&nbsp;create</a></code>
+		<span class="tooltip"><p>If the folder doesn&rsquo;t exist on the server this method will create it. Make sure the pathname
+has been set first.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete">&ndash;&nbsp;delete</a></code>
+		<span class="tooltip"><p>This method will remove the folder and any messages contained within from the server.
+Be careful when using this method because there is no way to undo.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribe">&ndash;&nbsp;subscribe</a></code>
+		<span class="tooltip"><p>The folder will be listed as subscribed on the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsubscribe">&ndash;&nbsp;unsubscribe</a></code>
+		<span class="tooltip"><p>The folder will be listed as unsubscribed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendMessage:">&ndash;&nbsp;appendMessage:</a></code>
+		<span class="tooltip"><p>Exposes the IMAP APPEND command, see the IMAP RFC 4549.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flagsForMessage:flags:">&ndash;&nbsp;flagsForMessage:flags:</a></code>
+		<span class="tooltip"><p>Retrieves the message flags. You must AND/OR using the defines constants.
+Here is a list of message flags:
+CTFlagNew, CTFlagSeen, CTFlagFlagged, CTFlagDeleted,
+CTFlagAnswered, CTFlagForwarded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFlags:forMessage:">&ndash;&nbsp;setFlags:forMessage:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s flags on the server, take a look at the
+documentation for flagsForMessage:</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/extensionFlagsForMessage:flags:">&ndash;&nbsp;extensionFlagsForMessage:flags:</a></code>
+		<span class="tooltip"><p>Retrieves the message extension flags.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setExtensionFlags:forMessage:">&ndash;&nbsp;setExtensionFlags:forMessage:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s extension flags on the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flagsForMessage:flags:extensionFlags:">&ndash;&nbsp;flagsForMessage:flags:extensionFlags:</a></code>
+		<span class="tooltip"><p>Retrieves the message&rsquo;s flags and extension flags, take a look at the
+documentation for flagsForMessage:</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFlags:extensionFlags:forMessage:">&ndash;&nbsp;setFlags:extensionFlags:forMessage:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s flags and extension flags on the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expunge">&ndash;&nbsp;expunge</a></code>
+		<span class="tooltip"><p>Deletes all messages contained in the folder that are marked for
+deletion. Deleting messages in IMAP is a little strange, first
+you need to set the message flag CTFlagDeleted to CTFlagSet, and
+then when you call expunge on the folder the message is contained
+in, it will be deleted.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyMessageWithUID:toPath:">&ndash;&nbsp;copyMessageWithUID:toPath:</a></code>
+		<span class="tooltip"><p>Copies a message to a folder</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveMessageWithUID:toPath:">&ndash;&nbsp;moveMessageWithUID:toPath:</a></code>
+		<span class="tooltip"><p>Moves a message to a folder</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unreadMessageCount:">&ndash;&nbsp;unreadMessageCount:</a></code>
+		<span class="tooltip"><p>Pass in a pointer to a NSUInteger to get the number of unread messages. This causes a round trip to the server,
+as it fetches the count for each call.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalMessageCount:">&ndash;&nbsp;totalMessageCount:</a></code>
+		<span class="tooltip"><p>Pass in a pointer to a NSUInteger to get the number of messages in the folder. The count was retrieved
+when the folder connection was established, so to refresh the count you must <a href="#//api/name/disconnect">disconnect</a> and re<a href="#//api/name/connect">connect</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uidValidity">&ndash;&nbsp;uidValidity</a></code>
+		<span class="tooltip"><p>Returns the uid validity value for the folder, which can be used to determine if the
+local cached UID&rsquo;s are still valid, or if the server has changed UID&rsquo;s</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uidNext">&ndash;&nbsp;uidNext</a></code>
+		<span class="tooltip"><p>Returns the uid next value for the folder. The next message added to the mailbox
+will be assigned a UID greater than or equal to uidNext</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/lastError" title="lastError"></a>
+	<h3 class="subsubtitle method-title">lastError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If an error occurred (nil or return of NO) call this method to get the error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSError *lastError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If an error occurred (nil or return of NO) call this method to get the error</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appendMessage:" title="appendMessage:"></a>
+	<h3 class="subsubtitle method-title">appendMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Exposes the IMAP APPEND command, see the IMAP RFC 4549.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)appendMessage:(CTCoreMessage *)<em>msg</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Exposes the IMAP APPEND command, see the IMAP RFC 4549.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/check" title="check"></a>
+	<h3 class="subsubtitle method-title">check</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform an IMAP check command</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)check</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform an IMAP check command</p>
+
+<p>From IMAP RFC: &ldquo;The CHECK command requests a checkpoint of the currently selected mailbox.
+A checkpoint refers to any implementation-dependent housekeeping associated
+with the mailbox (e.g., resolving the server&rsquo;s in-memory state of the mailbox
+with the state on its disk) that is not normally executed as part of each command.&rdquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connect" title="connect"></a>
+	<h3 class="subsubtitle method-title">connect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This initiates the connection after the folder has been initalized.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)connect</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This initiates the connection after the folder has been initalized.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyMessageWithUID:toPath:" title="copyMessageWithUID:toPath:"></a>
+	<h3 class="subsubtitle method-title">copyMessageWithUID:toPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Copies a message to a folder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)copyMessageWithUID:(NSUInteger)<em>uid</em> toPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Copies a message to a folder</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/create" title="create"></a>
+	<h3 class="subsubtitle method-title">create</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If the folder doesn&rsquo;t exist on the server this method will create it. Make sure the pathname
+has been set first.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)create</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the folder doesn&rsquo;t exist on the server this method will create it. Make sure the pathname
+has been set first.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delete" title="delete"></a>
+	<h3 class="subsubtitle method-title">delete</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method will remove the folder and any messages contained within from the server.
+Be careful when using this method because there is no way to undo.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)delete</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method will remove the folder and any messages contained within from the server.
+Be careful when using this method because there is no way to undo.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnect" title="disconnect"></a>
+	<h3 class="subsubtitle method-title">disconnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method terminates the connection</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disconnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method terminates the connection</p>
+
+<p>Make sure you don&rsquo;t have any message connections open from this folder before disconnecting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expunge" title="expunge"></a>
+	<h3 class="subsubtitle method-title">expunge</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes all messages contained in the folder that are marked for
+deletion. Deleting messages in IMAP is a little strange, first
+you need to set the message flag CTFlagDeleted to CTFlagSet, and
+then when you call expunge on the folder the message is contained
+in, it will be deleted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)expunge</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deletes all messages contained in the folder that are marked for
+deletion. Deleting messages in IMAP is a little strange, first
+you need to set the message flag CTFlagDeleted to CTFlagSet, and
+then when you call expunge on the folder the message is contained
+in, it will be deleted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/extensionFlagsForMessage:flags:" title="extensionFlagsForMessage:flags:"></a>
+	<h3 class="subsubtitle method-title">extensionFlagsForMessage:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the message extension flags.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)extensionFlagsForMessage:(CTCoreMessage *)<em>msg</em> flags:(NSArray **)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the message extension flags.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flagsForMessage:flags:" title="flagsForMessage:flags:"></a>
+	<h3 class="subsubtitle method-title">flagsForMessage:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the message flags. You must AND/OR using the defines constants.
+Here is a list of message flags:
+CTFlagNew, CTFlagSeen, CTFlagFlagged, CTFlagDeleted,
+CTFlagAnswered, CTFlagForwarded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)flagsForMessage:(CTCoreMessage *)<em>msg</em> flags:(NSUInteger *)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the message flags. You must AND/OR using the defines constants.
+Here is a list of message flags:
+CTFlagNew, CTFlagSeen, CTFlagFlagged, CTFlagDeleted,
+CTFlagAnswered, CTFlagForwarded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flagsForMessage:flags:extensionFlags:" title="flagsForMessage:flags:extensionFlags:"></a>
+	<h3 class="subsubtitle method-title">flagsForMessage:flags:extensionFlags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the message&rsquo;s flags and extension flags, take a look at the
+documentation for flagsForMessage:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)flagsForMessage:(CTCoreMessage *)<em>msg</em> flags:(NSUInteger *)<em>flags</em> extensionFlags:(NSArray **)<em>extensionFlags</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the message&rsquo;s flags and extension flags, take a look at the
+documentation for flagsForMessage:</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idleWithTimeout:" title="idleWithTimeout:"></a>
+	<h3 class="subsubtitle method-title">idleWithTimeout:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends the idle command to the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CTIdleResult)idleWithTimeout:(NSUInteger)<em>timeout</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends the idle command to the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithPath:inAccount:" title="initWithPath:inAccount:"></a>
+	<h3 class="subsubtitle method-title">initWithPath:inAccount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is used to initialize a folder. This method or the
+method in <a href="../Classes/CTCoreAccount.html">CTCoreAccount</a> folderWithPath can be used to setup a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithPath:(NSString *)<em>path</em> inAccount:(CTCoreAccount *)<em>account</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inAccount</em></dt>
+			<dd><p>This parameter must be passed in so the folder can initiate it&rsquo;s connection.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is used to initialize a folder. This method or the
+method in <a href="../Classes/CTCoreAccount.html">CTCoreAccount</a> folderWithPath can be used to setup a folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageWithUID:" title="messageWithUID:"></a>
+	<h3 class="subsubtitle method-title">messageWithUID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will return the message from this folder with the UID that was passed in.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CTCoreMessage *)messageWithUID:(NSUInteger)<em>uid</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/CTCoreMessage.html">CTCoreMessage</a> or if not found, nil</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This will return the message from this folder with the UID that was passed in.</p>
+
+<p>A CTMessage object is returned which can be used to get further information and perform operationson the message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesFromSequenceNumber:to:withFetchAttributes:" title="messagesFromSequenceNumber:to:withFetchAttributes:"></a>
+	<h3 class="subsubtitle method-title">messagesFromSequenceNumber:to:withFetchAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to download message lists from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesFromSequenceNumber:(NSUInteger)<em>startNum</em> to:(NSUInteger)<em>endNum</em> withFetchAttributes:(CTFetchAttributes)<em>attrs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attrs</em></dt>
+			<dd><p>This controls what is fetched.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>The message sequence number to start from, starts with 1 and NOT 0 (IMAP starts with 1 that way, sorry)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>The ending message sequence number, or if you&rsquo;d like to fetch to the end of the message list pass in 0</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSArray of CTCoreMessage&rsquo;s. Returns nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to download message lists from the server.</p>
+
+<p>This method take fetch attributes which configure what is fetched. Fetch attributes can be combined
+so you fetch all the message data at once, or select which pieces you want for your app. You can
+also fetch just the default attributes which will be as fast as possible. Pass in
+CTFetchAttrDefaultsOnly to attrs fetch the minimum possible, this includes the UID and
+flags. The defaults are always fetched, even when you don&rsquo;t pass in this flag.  Use
+CTFetchAttrBodyStructure to also fetch the body structure of the message. This prevents a future
+round trip done by <a href="../Classes/CTCoreMessage.html#//api/name/fetchBodyStructure">[CTCoreMessage fetchBodyStructure]</a>, if it sees you already have the body
+structure it won&rsquo;t re-fetch it.  Use CTFetchAttrEnvelope if you&rsquo;d like to fetch the subject, to,
+from, cc, bcc, sender, date, size, etc. You can also fetch both the envelope and body structure by passing
+in CTFetchAttrEnvelope | CTFetchAttrBodyStructure</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesFromUID:to:withFetchAttributes:" title="messagesFromUID:to:withFetchAttributes:"></a>
+	<h3 class="subsubtitle method-title">messagesFromUID:to:withFetchAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to download message lists from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesFromUID:(NSUInteger)<em>startUID</em> to:(NSUInteger)<em>endUID</em> withFetchAttributes:(CTFetchAttributes)<em>attrs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attrs</em></dt>
+			<dd><p>This controls what is fetched.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>The message sequence number to start from, starts with 1 and NOT 0 (IMAP starts with 1 that way, sorry)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>The ending message sequence number, or if you&rsquo;d like to fetch to the end of the message list pass in 0</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSArray of CTCoreMessage&rsquo;s. Returns nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to download message lists from the server.</p>
+
+<p>This method uses UID ranges to determine which messages to download, while <a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">messagesFromSequenceNumber:to:withFetchAttributes:</a> uses sequence numbers.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">&ndash; messagesFromSequenceNumber:to:withFetchAttributes:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesWithSequenceNumbers:fetchAttributes:" title="messagesWithSequenceNumbers:fetchAttributes:"></a>
+	<h3 class="subsubtitle method-title">messagesWithSequenceNumbers:fetchAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to download message lists from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesWithSequenceNumbers:(NSIndexSet *)<em>sequenceNumbers</em> fetchAttributes:(CTFetchAttributes)<em>attrs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sequenceNumbers</em></dt>
+			<dd><p>The indexset of sequence numbers to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attrs</em></dt>
+			<dd><p>This controls what is fetched.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSArray of CTCoreMessage&rsquo;s. Returns nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to download message lists from the server.</p>
+
+<p>This method uses sequence numbers indexset to determine which messages to download.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">&ndash; messagesFromSequenceNumber:to:withFetchAttributes:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesWithUIDs:fetchAttributes:" title="messagesWithUIDs:fetchAttributes:"></a>
+	<h3 class="subsubtitle method-title">messagesWithUIDs:fetchAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to download message lists from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesWithUIDs:(NSIndexSet *)<em>uidNumbers</em> fetchAttributes:(CTFetchAttributes)<em>attrs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uidNumbers</em></dt>
+			<dd><p>The indexset of uid numbers to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attrs</em></dt>
+			<dd><p>This controls what is fetched.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSArray of CTCoreMessage&rsquo;s. Returns nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to download message lists from the server.</p>
+
+<p>This method uses uid numbers indexset to determine which messages to download.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/messagesFromSequenceNumber:to:withFetchAttributes:">&ndash; messagesFromSequenceNumber:to:withFetchAttributes:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveMessageWithUID:toPath:" title="moveMessageWithUID:toPath:"></a>
+	<h3 class="subsubtitle method-title">moveMessageWithUID:toPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Moves a message to a folder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)moveMessageWithUID:(NSUInteger)<em>uid</em> toPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Moves a message to a folder</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="subsubtitle method-title">path</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entire path of the folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)path</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The entire path of the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceNumberForUID:sequenceNumber:" title="sequenceNumberForUID:sequenceNumber:"></a>
+	<h3 class="subsubtitle method-title">sequenceNumberForUID:sequenceNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pulls the sequence number for the message with the specified uid.
+It does not perform UID validation, and the sequence ID is only
+valid per session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sequenceNumberForUID:(NSUInteger)<em>uid</em> sequenceNumber:(NSUInteger *)<em>sequenceNumber</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>The</em></dt>
+			<dd><p>uid for the message</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pulls the sequence number for the message with the specified uid.
+It does not perform UID validation, and the sequence ID is only
+valid per session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setExtensionFlags:forMessage:" title="setExtensionFlags:forMessage:"></a>
+	<h3 class="subsubtitle method-title">setExtensionFlags:forMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s extension flags on the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setExtensionFlags:(NSArray *)<em>flags</em> forMessage:(CTCoreMessage *)<em>msg</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s extension flags on the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFlags:extensionFlags:forMessage:" title="setFlags:extensionFlags:forMessage:"></a>
+	<h3 class="subsubtitle method-title">setFlags:extensionFlags:forMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s flags and extension flags on the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setFlags:(NSUInteger)<em>flags</em> extensionFlags:(NSArray *)<em>extensionFlags</em> forMessage:(CTCoreMessage *)<em>msg</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s flags and extension flags on the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFlags:forMessage:" title="setFlags:forMessage:"></a>
+	<h3 class="subsubtitle method-title">setFlags:forMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s flags on the server, take a look at the
+documentation for flagsForMessage:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setFlags:(NSUInteger)<em>flags</em> forMessage:(CTCoreMessage *)<em>msg</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s flags on the server, take a look at the
+documentation for flagsForMessage:</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPath:" title="setPath:"></a>
+	<h3 class="subsubtitle method-title">setPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will change the <a href="#//api/name/path">path</a> of the folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The new <a href="#//api/name/path">path</a> for the folder as an NSString.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This will change the <a href="#//api/name/path">path</a> of the folder.</p>
+
+<p>Use this method to rename the folder on the server or to move the folder on the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribe" title="subscribe"></a>
+	<h3 class="subsubtitle method-title">subscribe</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The folder will be listed as subscribed on the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)subscribe</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The folder will be listed as subscribed on the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalMessageCount:" title="totalMessageCount:"></a>
+	<h3 class="subsubtitle method-title">totalMessageCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pass in a pointer to a NSUInteger to get the number of messages in the folder. The count was retrieved
+when the folder connection was established, so to refresh the count you must <a href="#//api/name/disconnect">disconnect</a> and re<a href="#//api/name/connect">connect</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)totalMessageCount:(NSUInteger *)<em>totalCount</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pass in a pointer to a NSUInteger to get the number of messages in the folder. The count was retrieved
+when the folder connection was established, so to refresh the count you must <a href="#//api/name/disconnect">disconnect</a> and re<a href="#//api/name/connect">connect</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uidNext" title="uidNext"></a>
+	<h3 class="subsubtitle method-title">uidNext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the uid next value for the folder. The next message added to the mailbox
+will be assigned a UID greater than or equal to uidNext</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)uidNext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the uid next value for the folder. The next message added to the mailbox
+will be assigned a UID greater than or equal to uidNext</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uidValidity" title="uidValidity"></a>
+	<h3 class="subsubtitle method-title">uidValidity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the uid validity value for the folder, which can be used to determine if the
+local cached UID&rsquo;s are still valid, or if the server has changed UID&rsquo;s</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)uidValidity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the uid validity value for the folder, which can be used to determine if the
+local cached UID&rsquo;s are still valid, or if the server has changed UID&rsquo;s</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unreadMessageCount:" title="unreadMessageCount:"></a>
+	<h3 class="subsubtitle method-title">unreadMessageCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pass in a pointer to a NSUInteger to get the number of unread messages. This causes a round trip to the server,
+as it fetches the count for each call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)unreadMessageCount:(NSUInteger *)<em>unseenCount</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pass in a pointer to a NSUInteger to get the number of unread messages. This causes a round trip to the server,
+as it fetches the count for each call.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsubscribe" title="unsubscribe"></a>
+	<h3 class="subsubtitle method-title">unsubscribe</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The folder will be listed as unsubscribed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)unsubscribe</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The folder will be listed as unsubscribed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Central Atomics Inc.. All rights reserved. (Last updated: 2013-04-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

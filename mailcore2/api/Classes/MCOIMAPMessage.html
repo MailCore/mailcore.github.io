@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MCOIMAPMessage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore2 </a></h1>
+				<a id="developerHome" href="../index.html">MailCore2</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MCOIMAPMessage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/flags">&nbsp;&nbsp;&nbsp;&nbsp;flags</option>
+	
+	<option value="//api/name/gmailLabels">&nbsp;&nbsp;&nbsp;&nbsp;gmailLabels</option>
+	
+	<option value="//api/name/gmailMessageID">&nbsp;&nbsp;&nbsp;&nbsp;gmailMessageID</option>
+	
+	<option value="//api/name/gmailThreadID">&nbsp;&nbsp;&nbsp;&nbsp;gmailThreadID</option>
+	
+	<option value="//api/name/mainPart">&nbsp;&nbsp;&nbsp;&nbsp;mainPart</option>
+	
+	<option value="//api/name/modSeqValue">&nbsp;&nbsp;&nbsp;&nbsp;modSeqValue</option>
+	
+	<option value="//api/name/originalFlags">&nbsp;&nbsp;&nbsp;&nbsp;originalFlags</option>
+	
+	<option value="//api/name/uid">&nbsp;&nbsp;&nbsp;&nbsp;uid</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/htmlRenderingWithFolder:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- htmlRenderingWithFolder:delegate:</option>
+	
+	<option value="//api/name/partForPartID:">&nbsp;&nbsp;&nbsp;&nbsp;- partForPartID:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flags">flags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gmailLabels">gmailLabels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gmailMessageID">gmailMessageID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gmailThreadID">gmailThreadID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mainPart">mainPart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modSeqValue">modSeqValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/originalFlags">originalFlags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uid">uid</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/htmlRenderingWithFolder:delegate:">htmlRenderingWithFolder:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/partForPartID:">partForPartID:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MCOIMAPMessage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MCOIMAPMessage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/MCOAbstractMessage.html">MCOAbstractMessage</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MCOIMAPMessage.h<br />MCOIMAPMessage.mm</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This represents an IMAP message.</p>
+
+<p>If you fetched the MIME structure of the message, you can fetch
+efficiently the content of the message by fetching only the parts
+that you need to show it.</p>
+
+<p>For example, you could fetch only the text parts to show the summary
+of the message, using <a href="../Classes/MCOIMAPSession.html#//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:">[MCOIMAPSession fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:]</a></p>
+
+<p>You can also decide to fetch entirely the message using
+<a href="../Classes/MCOIMAPSession.html#//api/name/fetchMessageByUIDOperationWithFolder:uid:">[MCOIMAPSession fetchMessageByUIDOperationWithFolder:uid:]</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uid">&nbsp;&nbsp;uid</a></code>
+		<span class="tooltip"><p>IMAP UID of the message.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flags">&nbsp;&nbsp;flags</a></code>
+		<span class="tooltip"><p>Flags of the message, like if it is deleted, read, starred etc</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/originalFlags">&nbsp;&nbsp;originalFlags</a></code>
+		<span class="tooltip"><p>The contents of the message <a href="#//api/name/flags">flags</a> when it was fetched from the server</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modSeqValue">&nbsp;&nbsp;modSeqValue</a></code>
+		<span class="tooltip"><p>It&rsquo;s the last modification sequence value of the message synced from the server. See RFC4551</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mainPart">&nbsp;&nbsp;mainPart</a></code>
+		<span class="tooltip"><p>Main MIME part of the message</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gmailLabels">&nbsp;&nbsp;gmailLabels</a></code>
+		<span class="tooltip"><p>All Gmail labels of the message</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gmailMessageID">&nbsp;&nbsp;gmailMessageID</a></code>
+		<span class="tooltip"><p>Gmail message ID of the message</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gmailThreadID">&nbsp;&nbsp;gmailThreadID</a></code>
+		<span class="tooltip"><p>Gmail thread ID of the message</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/partForPartID:">&ndash;&nbsp;partForPartID:</a></code>
+		<span class="tooltip"><p>Returns the part with the given part identifier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/htmlRenderingWithFolder:delegate:">&ndash;&nbsp;htmlRenderingWithFolder:delegate:</a></code>
+		<span class="tooltip"><p>HTML rendering of the message to be displayed in a web view.
+The delegate should implement at least
+[<a href="../Classes/MCOAbstractMessage.html">MCOAbstractMessage</a>:dataForIMAPPart:folder:]
+so that the complete HTML rendering can take place.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/flags" title="flags"></a>
+	<h3 class="subsubtitle method-title">flags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flags of the message, like if it is deleted, read, starred etc</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOMessageFlag flags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gmailLabels" title="gmailLabels"></a>
+	<h3 class="subsubtitle method-title">gmailLabels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All Gmail labels of the message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *gmailLabels</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gmailMessageID" title="gmailMessageID"></a>
+	<h3 class="subsubtitle method-title">gmailMessageID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gmail message ID of the message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) uint64_t gmailMessageID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gmailThreadID" title="gmailThreadID"></a>
+	<h3 class="subsubtitle method-title">gmailThreadID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gmail thread ID of the message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) uint64_t gmailThreadID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mainPart" title="mainPart"></a>
+	<h3 class="subsubtitle method-title">mainPart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Main MIME part of the message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) MCOAbstractPart *mainPart</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modSeqValue" title="modSeqValue"></a>
+	<h3 class="subsubtitle method-title">modSeqValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>It&rsquo;s the last modification sequence value of the message synced from the server. See RFC4551</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) uint64_t modSeqValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/originalFlags" title="originalFlags"></a>
+	<h3 class="subsubtitle method-title">originalFlags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The contents of the message <a href="#//api/name/flags">flags</a> when it was fetched from the server</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOMessageFlag originalFlags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uid" title="uid"></a>
+	<h3 class="subsubtitle method-title">uid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>IMAP UID of the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) uint32_t uid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/htmlRenderingWithFolder:delegate:" title="htmlRenderingWithFolder:delegate:"></a>
+	<h3 class="subsubtitle method-title">htmlRenderingWithFolder:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>HTML rendering of the message to be displayed in a web view.
+The delegate should implement at least
+[<a href="../Classes/MCOAbstractMessage.html">MCOAbstractMessage</a>:dataForIMAPPart:folder:]
+so that the complete HTML rendering can take place.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)htmlRenderingWithFolder:(NSString *)<em>folder</em> delegate:(id&lt;MCOHTMLRendererIMAPDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/partForPartID:" title="partForPartID:"></a>
+	<h3 class="subsubtitle method-title">partForPartID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the part with the given part identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOAbstractPart *)partForPartID:(NSString *)<em>partID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>partID</em></dt>
+			<dd><p>A part identifier looks like 1.2.1</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 MailCore2. All rights reserved. (Last updated: 2013-09-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

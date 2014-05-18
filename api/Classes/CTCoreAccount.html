@@ -1,0 +1,771 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CTCoreAccount Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore </a></h1>
+				<a id="developerHome" href="../index.html">Central Atomics Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CTCoreAccount Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/lastError">&nbsp;&nbsp;&nbsp;&nbsp;lastError</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/allFolders">&nbsp;&nbsp;&nbsp;&nbsp;- allFolders</option>
+	
+	<option value="//api/name/allFoldersExtended">&nbsp;&nbsp;&nbsp;&nbsp;- allFoldersExtended</option>
+	
+	<option value="//api/name/connectToServer:port:connectionType:authType:login:password:">&nbsp;&nbsp;&nbsp;&nbsp;- connectToServer:port:connectionType:authType:login:password:</option>
+	
+	<option value="//api/name/disconnect">&nbsp;&nbsp;&nbsp;&nbsp;- disconnect</option>
+	
+	<option value="//api/name/folderWithPath:">&nbsp;&nbsp;&nbsp;&nbsp;- folderWithPath:</option>
+	
+	<option value="//api/name/isConnected">&nbsp;&nbsp;&nbsp;&nbsp;- isConnected</option>
+	
+	<option value="//api/name/subscribedFolders">&nbsp;&nbsp;&nbsp;&nbsp;- subscribedFolders</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastError">lastError</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allFolders">allFolders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allFoldersExtended">allFoldersExtended</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectToServer:port:connectionType:authType:login:password:">connectToServer:port:connectionType:authType:login:password:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnect">disconnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/folderWithPath:">folderWithPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isConnected">isConnected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribedFolders">subscribedFolders</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CTCoreAccount Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CTCoreAccount Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CTCoreAccount.h<br />CTCoreAccount.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CTCoreAccount is the base class with which you establish a connection to the
+IMAP server. After establishing a connection with CTCoreAccount you can access
+all of the folders (I use the term folder instead of mailbox) on the server.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastError">&nbsp;&nbsp;lastError</a></code>
+		<span class="tooltip"><p>If an error occurred (nil or return of NO) call this method to get the error</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allFolders">&ndash;&nbsp;allFolders</a></code>
+		<span class="tooltip"><p>Retrieves the list of all the available folders from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allFoldersExtended">&ndash;&nbsp;allFoldersExtended</a></code>
+		<span class="tooltip"><p>Retrieves the list of all the available folders from the server using the extended list command (XLIST).
+This is only supported by Gmail.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribedFolders">&ndash;&nbsp;subscribedFolders</a></code>
+		<span class="tooltip"><p>Retrieves a list of only the subscribed folders from the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/folderWithPath:">&ndash;&nbsp;folderWithPath:</a></code>
+		<span class="tooltip"><p>If you have the path of a folder on the server use this method to retrieve just the one folder.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectToServer:port:connectionType:authType:login:password:">&ndash;&nbsp;connectToServer:port:connectionType:authType:login:password:</a></code>
+		<span class="tooltip"><p>This method initiates the connection to the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isConnected">&ndash;&nbsp;isConnected</a></code>
+		<span class="tooltip"><p>This method returns the current connection status.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnect">&ndash;&nbsp;disconnect</a></code>
+		<span class="tooltip"><p>Terminates the connection. If you terminate this connection it will also affect the
+connectivity of CTCoreFolders and CTMessages that rely on this account.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/lastError" title="lastError"></a>
+	<h3 class="subsubtitle method-title">lastError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If an error occurred (nil or return of NO) call this method to get the error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSError *lastError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If an error occurred (nil or return of NO) call this method to get the error</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allFolders" title="allFolders"></a>
+	<h3 class="subsubtitle method-title">allFolders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the list of all the available folders from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)allFolders</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSSet which contains NSStrings of the folders pathnames, nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the list of all the available folders from the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allFoldersExtended" title="allFoldersExtended"></a>
+	<h3 class="subsubtitle method-title">allFoldersExtended</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the list of all the available folders from the server using the extended list command (XLIST).
+This is only supported by Gmail.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)allFoldersExtended</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSSet which contains CTXlistResults, nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the list of all the available folders from the server using the extended list command (XLIST).
+This is only supported by Gmail.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectToServer:port:connectionType:authType:login:password:" title="connectToServer:port:connectionType:authType:login:password:"></a>
+	<h3 class="subsubtitle method-title">connectToServer:port:connectionType:authType:login:password:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method initiates the connection to the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)connectToServer:(NSString *)<em>server</em> port:(int)<em>port</em> connectionType:(int)<em>conType</em> authType:(int)<em>authType</em> login:(NSString *)<em>login</em> password:(NSString *)<em>password</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>server</em></dt>
+			<dd><p>The address of the server.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>port</em></dt>
+			<dd><p>The port to connect to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authType</em></dt>
+			<dd><p>The authentication type, only CTImapAuthTypePlain is currently supported</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>login</em></dt>
+			<dd><p>The username to connect with.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The password to use to connect.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connnectionType</em></dt>
+			<dd><p>What kind of connection to use, it can be one of these three values:
+CTConnectionTypePlain, CTConnectionTypeStartTLS, CTConnectionTypeTryStartTLS, CTConnectionTypeTLS. See MailCoreTypes.h for more information</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> to get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method initiates the connection to the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnect" title="disconnect"></a>
+	<h3 class="subsubtitle method-title">disconnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Terminates the connection. If you terminate this connection it will also affect the
+connectivity of CTCoreFolders and CTMessages that rely on this account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disconnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Terminates the connection. If you terminate this connection it will also affect the
+connectivity of CTCoreFolders and CTMessages that rely on this account.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/folderWithPath:" title="folderWithPath:"></a>
+	<h3 class="subsubtitle method-title">folderWithPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you have the path of a folder on the server use this method to retrieve just the one folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CTCoreFolder *)folderWithPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>A NSString specifying the path of the folder to retrieve from the server.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a <a href="../Classes/CTCoreFolder.html">CTCoreFolder</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you have the path of a folder on the server use this method to retrieve just the one folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isConnected" title="isConnected"></a>
+	<h3 class="subsubtitle method-title">isConnected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns the current connection status.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isConnected</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns YES or NO as the status of the connection.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method returns the current connection status.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribedFolders" title="subscribedFolders"></a>
+	<h3 class="subsubtitle method-title">subscribedFolders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a list of only the subscribed folders from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)subscribedFolders</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSSet which contains NSStrings of the folders pathnames, nil on error</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves a list of only the subscribed folders from the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreAccount.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Central Atomics Inc.. All rights reserved. (Last updated: 2013-04-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

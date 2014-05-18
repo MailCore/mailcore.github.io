@@ -1,0 +1,2906 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CTCoreMessage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore </a></h1>
+				<a id="developerHome" href="../index.html">Central Atomics Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CTCoreMessage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/lastError">&nbsp;&nbsp;&nbsp;&nbsp;lastError</option>
+	
+	<option value="//api/name/mime">&nbsp;&nbsp;&nbsp;&nbsp;mime</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addAttachment:">&nbsp;&nbsp;&nbsp;&nbsp;- addAttachment:</option>
+	
+	<option value="//api/name/attachments">&nbsp;&nbsp;&nbsp;&nbsp;- attachments</option>
+	
+	<option value="//api/name/bcc">&nbsp;&nbsp;&nbsp;&nbsp;- bcc</option>
+	
+	<option value="//api/name/body">&nbsp;&nbsp;&nbsp;&nbsp;- body</option>
+	
+	<option value="//api/name/bodyPreferringPlainText:">&nbsp;&nbsp;&nbsp;&nbsp;- bodyPreferringPlainText:</option>
+	
+	<option value="//api/name/cc">&nbsp;&nbsp;&nbsp;&nbsp;- cc</option>
+	
+	<option value="//api/name/extionsionFlags">&nbsp;&nbsp;&nbsp;&nbsp;- extionsionFlags</option>
+	
+	<option value="//api/name/fetchBodyStructure">&nbsp;&nbsp;&nbsp;&nbsp;- fetchBodyStructure</option>
+	
+	<option value="//api/name/flags">&nbsp;&nbsp;&nbsp;&nbsp;- flags</option>
+	
+	<option value="//api/name/from">&nbsp;&nbsp;&nbsp;&nbsp;- from</option>
+	
+	<option value="//api/name/hasBodyStructure">&nbsp;&nbsp;&nbsp;&nbsp;- hasBodyStructure</option>
+	
+	<option value="//api/name/htmlBody">&nbsp;&nbsp;&nbsp;&nbsp;- htmlBody</option>
+	
+	<option value="//api/name/inReplyTo">&nbsp;&nbsp;&nbsp;&nbsp;- inReplyTo</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithFileAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFileAtPath:</option>
+	
+	<option value="//api/name/initWithMessageStruct:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMessageStruct:</option>
+	
+	<option value="//api/name/initWithString:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:</option>
+	
+	<option value="//api/name/isNew">&nbsp;&nbsp;&nbsp;&nbsp;- isNew</option>
+	
+	<option value="//api/name/isStarred">&nbsp;&nbsp;&nbsp;&nbsp;- isStarred</option>
+	
+	<option value="//api/name/isUnread">&nbsp;&nbsp;&nbsp;&nbsp;- isUnread</option>
+	
+	<option value="//api/name/lastError">&nbsp;&nbsp;&nbsp;&nbsp;- lastError</option>
+	
+	<option value="//api/name/messageAsEmlx">&nbsp;&nbsp;&nbsp;&nbsp;- messageAsEmlx</option>
+	
+	<option value="//api/name/messageId">&nbsp;&nbsp;&nbsp;&nbsp;- messageId</option>
+	
+	<option value="//api/name/messageSize">&nbsp;&nbsp;&nbsp;&nbsp;- messageSize</option>
+	
+	<option value="//api/name/references">&nbsp;&nbsp;&nbsp;&nbsp;- references</option>
+	
+	<option value="//api/name/render">&nbsp;&nbsp;&nbsp;&nbsp;- render</option>
+	
+	<option value="//api/name/replyTo">&nbsp;&nbsp;&nbsp;&nbsp;- replyTo</option>
+	
+	<option value="//api/name/rfc822">&nbsp;&nbsp;&nbsp;&nbsp;- rfc822</option>
+	
+	<option value="//api/name/rfc822Header">&nbsp;&nbsp;&nbsp;&nbsp;- rfc822Header</option>
+	
+	<option value="//api/name/sender">&nbsp;&nbsp;&nbsp;&nbsp;- sender</option>
+	
+	<option value="//api/name/senderDate">&nbsp;&nbsp;&nbsp;&nbsp;- senderDate</option>
+	
+	<option value="//api/name/sequenceNumber">&nbsp;&nbsp;&nbsp;&nbsp;- sequenceNumber</option>
+	
+	<option value="//api/name/setBcc:">&nbsp;&nbsp;&nbsp;&nbsp;- setBcc:</option>
+	
+	<option value="//api/name/setBody:">&nbsp;&nbsp;&nbsp;&nbsp;- setBody:</option>
+	
+	<option value="//api/name/setCc:">&nbsp;&nbsp;&nbsp;&nbsp;- setCc:</option>
+	
+	<option value="//api/name/setFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- setFrom:</option>
+	
+	<option value="//api/name/setHTMLBody:">&nbsp;&nbsp;&nbsp;&nbsp;- setHTMLBody:</option>
+	
+	<option value="//api/name/setInReplyTo:">&nbsp;&nbsp;&nbsp;&nbsp;- setInReplyTo:</option>
+	
+	<option value="//api/name/setReferences:">&nbsp;&nbsp;&nbsp;&nbsp;- setReferences:</option>
+	
+	<option value="//api/name/setReplyTo:">&nbsp;&nbsp;&nbsp;&nbsp;- setReplyTo:</option>
+	
+	<option value="//api/name/setSequenceNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- setSequenceNumber:</option>
+	
+	<option value="//api/name/setSubject:">&nbsp;&nbsp;&nbsp;&nbsp;- setSubject:</option>
+	
+	<option value="//api/name/setTo:">&nbsp;&nbsp;&nbsp;&nbsp;- setTo:</option>
+	
+	<option value="//api/name/subject">&nbsp;&nbsp;&nbsp;&nbsp;- subject</option>
+	
+	<option value="//api/name/to">&nbsp;&nbsp;&nbsp;&nbsp;- to</option>
+	
+	<option value="//api/name/uid">&nbsp;&nbsp;&nbsp;&nbsp;- uid</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastError">lastError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mime">mime</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAttachment:">addAttachment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachments">attachments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bcc">bcc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/body">body</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyPreferringPlainText:">bodyPreferringPlainText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cc">cc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/extionsionFlags">extionsionFlags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchBodyStructure">fetchBodyStructure</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flags">flags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/from">from</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBodyStructure">hasBodyStructure</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/htmlBody">htmlBody</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inReplyTo">inReplyTo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFileAtPath:">initWithFileAtPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMessageStruct:">initWithMessageStruct:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:">initWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isNew">isNew</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isStarred">isStarred</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isUnread">isUnread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastError">lastError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageAsEmlx">messageAsEmlx</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageId">messageId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageSize">messageSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/references">references</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/render">render</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replyTo">replyTo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rfc822">rfc822</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rfc822Header">rfc822Header</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sender">sender</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/senderDate">senderDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceNumber">sequenceNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBcc:">setBcc:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBody:">setBody:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCc:">setCc:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFrom:">setFrom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHTMLBody:">setHTMLBody:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInReplyTo:">setInReplyTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setReferences:">setReferences:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setReplyTo:">setReplyTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSequenceNumber:">setSequenceNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSubject:">setSubject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTo:">setTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subject">subject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/to">to</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uid">uid</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CTCoreMessage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CTCoreMessage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CTCoreMessage.h<br />CTCoreMessage.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CTCoreMessage is how you work with messages. The easiest way <a href="#//api/name/to">to</a> instantiate a CTCoreMessage
+is <a href="#//api/name/to">to</a> first setup a <a href="../Classes/CTCoreAccount.html">CTCoreAccount</a> object and then get a <a href="../Classes/CTCoreFolder.html">CTCoreFolder</a> object and then use it&rsquo;s
+convenience method messageWithUID: <a href="#//api/name/to">to</a> get a message object you can work with.</p>
+
+<p>Anything that begins with &ldquo;fetch&rdquo;, requires that an active network connection is present.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastError">&nbsp;&nbsp;lastError</a></code>
+		<span class="tooltip"><p>If an error occurred (nil or return of NO) call this method <a href="#//api/name/to">to</a> get the error</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mime">&nbsp;&nbsp;mime</a></code>
+		<span class="tooltip"><p>If the <a href="#//api/name/body">body</a> structure has been fetched, this will contain the MIME structure</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>Used <a href="#//api/name/to">to</a> instantiate an empty message object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithMessageStruct:">&ndash;&nbsp;initWithMessageStruct:</a></code>
+		<span class="tooltip"><p>Used <a href="#//api/name/to">to</a> instantiate a message object with the contents of a mailmessage struct
+(a LibEtPan type). The mailmessage struct does not include any <a href="#//api/name/body">body</a> information,
+so after calling this method the message will have a <a href="#//api/name/body">body</a> which is NULL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFileAtPath:">&ndash;&nbsp;initWithFileAtPath:</a></code>
+		<span class="tooltip"><p>Used <a href="#//api/name/to">to</a> instantiate a message object based off the contents of a file on disk.
+The file on disk must be a valid MIME message.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:">&ndash;&nbsp;initWithString:</a></code>
+		<span class="tooltip"><p>Used <a href="#//api/name/to">to</a> instantiate a message object based off a string
+that contains a valid MIME message</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastError">&ndash;&nbsp;lastError</a></code>
+		<span class="tooltip"><p>If a method returns nil or in the case of a BOOL returns NO, call this <a href="#//api/name/to">to</a> get the error that occured</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasBodyStructure">&ndash;&nbsp;hasBodyStructure</a></code>
+		<span class="tooltip"><p>Returns YES if this message <a href="#//api/name/body">body</a> structure has been downloaded, and NO otherwise.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchBodyStructure">&ndash;&nbsp;fetchBodyStructure</a></code>
+		<span class="tooltip"><p>If the messages <a href="#//api/name/body">body</a> structure hasn&rsquo;t been downloaded already it will be fetched <a href="#//api/name/from">from</a> the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/body">&ndash;&nbsp;body</a></code>
+		<span class="tooltip"><p>This method returns the parsed plain text message body as an NSString.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/htmlBody">&ndash;&nbsp;htmlBody</a></code>
+		<span class="tooltip"><p>This method returns the html <a href="#//api/name/body">body</a> as an NSString.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyPreferringPlainText:">&ndash;&nbsp;bodyPreferringPlainText:</a></code>
+		<span class="tooltip"><p>Returns a message <a href="#//api/name/body">body</a> as an NSString.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBody:">&ndash;&nbsp;setBody:</a></code>
+		<span class="tooltip"><p>This method sets the message <a href="#//api/name/body">body</a>. Plaintext only please!</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setHTMLBody:">&ndash;&nbsp;setHTMLBody:</a></code>
+		<span class="tooltip"><p>Use this method <a href="#//api/name/to">to</a> set the <a href="#//api/name/body">body</a> if you have HTML content.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachments">&ndash;&nbsp;attachments</a></code>
+		<span class="tooltip"><p>A list of attachments this message has</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAttachment:">&ndash;&nbsp;addAttachment:</a></code>
+		<span class="tooltip"><p>Add an attachment <a href="#//api/name/to">to</a> the message.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subject">&ndash;&nbsp;subject</a></code>
+		<span class="tooltip"><p>Returns the subject of the message.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSubject:">&ndash;&nbsp;setSubject:</a></code>
+		<span class="tooltip"><p>Will set the <a href="#//api/name/subject">subject</a> of the message, use this when composing e-mail.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/senderDate">&ndash;&nbsp;senderDate</a></code>
+		<span class="tooltip"><p>Returns the date as given in the Date mail field</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isUnread">&ndash;&nbsp;isUnread</a></code>
+		<span class="tooltip"><p>Returns YES if the message is unread.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isNew">&ndash;&nbsp;isNew</a></code>
+		<span class="tooltip"><p>Returns YES if the message is recent and unread.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isStarred">&ndash;&nbsp;isStarred</a></code>
+		<span class="tooltip"><p>Returns YES if the message is starred (flagged in IMAP terms).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageId">&ndash;&nbsp;messageId</a></code>
+		<span class="tooltip"><p>A machine readable ID that is guaranteed unique by the
+host that generated the message</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uid">&ndash;&nbsp;uid</a></code>
+		<span class="tooltip"><p>Returns an NSUInteger containing the messages UID. This number is unique across sessions</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceNumber">&ndash;&nbsp;sequenceNumber</a></code>
+		<span class="tooltip"><p>Returns the message sequence number, this number cannot be used across sessions</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageSize">&ndash;&nbsp;messageSize</a></code>
+		<span class="tooltip"><p>Returns the message size in bytes</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flags">&ndash;&nbsp;flags</a></code>
+		<span class="tooltip"><p>Returns the message flags.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/extionsionFlags">&ndash;&nbsp;extionsionFlags</a></code>
+		<span class="tooltip"><p>Returns the message extionsion <a href="#//api/name/flags">flags</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSequenceNumber:">&ndash;&nbsp;setSequenceNumber:</a></code>
+		<span class="tooltip"><p>Set the message sequence number.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/from">&ndash;&nbsp;from</a></code>
+		<span class="tooltip"><p>Parses the from list, the result is an NSSet containing CTCoreAddress&rsquo;s</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFrom:">&ndash;&nbsp;setFrom:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s <a href="#//api/name/from">from</a> addresses</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sender">&ndash;&nbsp;sender</a></code>
+		<span class="tooltip"><p>Returns the sender.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/to">&ndash;&nbsp;to</a></code>
+		<span class="tooltip"><p>Returns the list of people the message was sent to, returns an NSSet containing CTAddress&rsquo;s.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTo:">&ndash;&nbsp;setTo:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s <a href="#//api/name/to">to</a> addresses</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inReplyTo">&ndash;&nbsp;inReplyTo</a></code>
+		<span class="tooltip"><p>Return the list of messageIds <a href="#//api/name/from">from</a> the in-reply<a href="#//api/name/to">to</a> field</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInReplyTo:">&ndash;&nbsp;setInReplyTo:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s in-reply<a href="#//api/name/to">to</a> messageIds</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/references">&ndash;&nbsp;references</a></code>
+		<span class="tooltip"><p>Return the list of messageIds <a href="#//api/name/from">from</a> the references field</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setReferences:">&ndash;&nbsp;setReferences:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s <a href="#//api/name/references">references</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cc">&ndash;&nbsp;cc</a></code>
+		<span class="tooltip"><p>Returns the list of people the message was cced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCc:">&ndash;&nbsp;setCc:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s <a href="#//api/name/cc">cc</a> addresses</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bcc">&ndash;&nbsp;bcc</a></code>
+		<span class="tooltip"><p>Returns the list of people the message was bcced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBcc:">&ndash;&nbsp;setBcc:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s <a href="#//api/name/bcc">bcc</a> addresses</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replyTo">&ndash;&nbsp;replyTo</a></code>
+		<span class="tooltip"><p>Returns the list of people the message was in reply<a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setReplyTo:">&ndash;&nbsp;setReplyTo:</a></code>
+		<span class="tooltip"><p>Sets the message&rsquo;s reply <a href="#//api/name/to">to</a> addresses</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/render">&ndash;&nbsp;render</a></code>
+		<span class="tooltip"><p>Returns the message rendered as the appropriate MIME and IMF content.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageAsEmlx">&ndash;&nbsp;messageAsEmlx</a></code>
+		<span class="tooltip"><p>Returns the message in the format Mail.app uses, Emlx.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rfc822">&ndash;&nbsp;rfc822</a></code>
+		<span class="tooltip"><p>Fetches <a href="#//api/name/from">from</a> the server the rfc822 content of the message, which are the headers and the message <a href="#//api/name/body">body</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rfc822Header">&ndash;&nbsp;rfc822Header</a></code>
+		<span class="tooltip"><p>Fetches <a href="#//api/name/from">from</a> the server the <a href="#//api/name/rfc822">rfc822</a> content of the message headers.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/lastError" title="lastError"></a>
+	<h3 class="subsubtitle method-title">lastError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If an error occurred (nil or return of NO) call this method <a href="#//api/name/to">to</a> get the error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSError *lastError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If an error occurred (nil or return of NO) call this method <a href="#//api/name/to">to</a> get the error</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mime" title="mime"></a>
+	<h3 class="subsubtitle method-title">mime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If the <a href="#//api/name/body">body</a> structure has been fetched, this will contain the MIME structure</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain) CTMIME *mime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the <a href="#//api/name/body">body</a> structure has been fetched, this will contain the MIME structure</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAttachment:" title="addAttachment:"></a>
+	<h3 class="subsubtitle method-title">addAttachment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an attachment <a href="#//api/name/to">to</a> the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAttachment:(CTCoreAttachment *)<em>attachment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add an attachment <a href="#//api/name/to">to</a> the message.</p>
+
+<p>Only used when sending e-mail</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachments" title="attachments"></a>
+	<h3 class="subsubtitle method-title">attachments</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A list of attachments this message has</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)attachments</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A list of attachments this message has</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bcc" title="bcc"></a>
+	<h3 class="subsubtitle method-title">bcc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the list of people the message was bcced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)bcc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the list of people the message was bcced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/body" title="body"></a>
+	<h3 class="subsubtitle method-title">body</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns the parsed plain text message body as an NSString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)body</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method returns the parsed plain text message body as an NSString.</p>
+
+<p>If a plaintext body isn&rsquo;t found an empty string is returned</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyPreferringPlainText:" title="bodyPreferringPlainText:"></a>
+	<h3 class="subsubtitle method-title">bodyPreferringPlainText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a message <a href="#//api/name/body">body</a> as an NSString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)bodyPreferringPlainText:(BOOL *)<em>isHTML</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isHTML</em></dt>
+			<dd><p>Pass in a BOOL pointer that will be set <a href="#//api/name/to">to</a> YES if an HTML <a href="#//api/name/body">body</a> is loaded</p>
+
+<p>First attempts <a href="#//api/name/to">to</a> retrieve a plain text <a href="#//api/name/body">body</a>, if that fails then
+tries for an HTML <a href="#//api/name/body">body</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a message <a href="#//api/name/body">body</a> as an NSString.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cc" title="cc"></a>
+	<h3 class="subsubtitle method-title">cc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the list of people the message was cced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)cc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the list of people the message was cced <a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/extionsionFlags" title="extionsionFlags"></a>
+	<h3 class="subsubtitle method-title">extionsionFlags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message extionsion <a href="#//api/name/flags">flags</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)extionsionFlags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message extionsion <a href="#//api/name/flags">flags</a>.</p>
+
+<p>The extension <a href="#//api/name/flags">flags</a> contain <a href="#//api/name/flags">flags</a> other than standard <a href="#//api/name/flags">flags</a> in <a href="#//api/name/flags">flags</a> property. This include &ldquo;Draft&rdquo; flag.
+See MailCoreTypes.h for a list of constants</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchBodyStructure" title="fetchBodyStructure"></a>
+	<h3 class="subsubtitle method-title">fetchBodyStructure</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If the messages <a href="#//api/name/body">body</a> structure hasn&rsquo;t been downloaded already it will be fetched <a href="#//api/name/from">from</a> the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)fetchBodyStructure</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES on success, NO on error. Call method <a href="#//api/name/lastError">lastError</a> <a href="#//api/name/to">to</a> get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the messages <a href="#//api/name/body">body</a> structure hasn&rsquo;t been downloaded already it will be fetched <a href="#//api/name/from">from</a> the server.</p>
+
+<p>The <a href="#//api/name/body">body</a> structure is needed <a href="#//api/name/to">to</a> get <a href="#//api/name/attachments">attachments</a> or the message <a href="#//api/name/body">body</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flags" title="flags"></a>
+	<h3 class="subsubtitle method-title">flags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message flags.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)flags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message flags.</p>
+
+<p>The flags contain if there user has replied, forwarded, read, delete etc.
+See MailCoreTypes.h for a list of constants</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/from" title="from"></a>
+	<h3 class="subsubtitle method-title">from</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parses the from list, the result is an NSSet containing CTCoreAddress&rsquo;s</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)from</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Parses the from list, the result is an NSSet containing CTCoreAddress&rsquo;s</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasBodyStructure" title="hasBodyStructure"></a>
+	<h3 class="subsubtitle method-title">hasBodyStructure</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if this message <a href="#//api/name/body">body</a> structure has been downloaded, and NO otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasBodyStructure</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if this message <a href="#//api/name/body">body</a> structure has been downloaded, and NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/htmlBody" title="htmlBody"></a>
+	<h3 class="subsubtitle method-title">htmlBody</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns the html <a href="#//api/name/body">body</a> as an NSString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)htmlBody</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method returns the html <a href="#//api/name/body">body</a> as an NSString.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inReplyTo" title="inReplyTo"></a>
+	<h3 class="subsubtitle method-title">inReplyTo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the list of messageIds <a href="#//api/name/from">from</a> the in-reply<a href="#//api/name/to">to</a> field</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)inReplyTo</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the list of messageIds <a href="#//api/name/from">from</a> the in-reply<a href="#//api/name/to">to</a> field</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used <a href="#//api/name/to">to</a> instantiate an empty message object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used <a href="#//api/name/to">to</a> instantiate an empty message object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFileAtPath:" title="initWithFileAtPath:"></a>
+	<h3 class="subsubtitle method-title">initWithFileAtPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object based off the contents of a file on disk.
+The file on disk must be a valid MIME message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFileAtPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object based off the contents of a file on disk.
+The file on disk must be a valid MIME message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithMessageStruct:" title="initWithMessageStruct:"></a>
+	<h3 class="subsubtitle method-title">initWithMessageStruct:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object with the contents of a mailmessage struct
+(a LibEtPan type). The mailmessage struct does not include any <a href="#//api/name/body">body</a> information,
+so after calling this method the message will have a <a href="#//api/name/body">body</a> which is NULL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithMessageStruct:(struct mailmessage *)<em>message</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object with the contents of a mailmessage struct
+(a LibEtPan type). The mailmessage struct does not include any <a href="#//api/name/body">body</a> information,
+so after calling this method the message will have a <a href="#//api/name/body">body</a> which is NULL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:" title="initWithString:"></a>
+	<h3 class="subsubtitle method-title">initWithString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object based off a string
+that contains a valid MIME message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>msgData</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used <a href="#//api/name/to">to</a> instantiate a message object based off a string
+that contains a valid MIME message</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isNew" title="isNew"></a>
+	<h3 class="subsubtitle method-title">isNew</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the message is recent and unread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isNew</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the message is recent and unread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isStarred" title="isStarred"></a>
+	<h3 class="subsubtitle method-title">isStarred</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the message is starred (flagged in IMAP terms).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isStarred</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the message is starred (flagged in IMAP terms).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isUnread" title="isUnread"></a>
+	<h3 class="subsubtitle method-title">isUnread</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the message is unread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isUnread</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the message is unread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastError" title="lastError"></a>
+	<h3 class="subsubtitle method-title">lastError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If a method returns nil or in the case of a BOOL returns NO, call this <a href="#//api/name/to">to</a> get the error that occured</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSError *)lastError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If a method returns nil or in the case of a BOOL returns NO, call this <a href="#//api/name/to">to</a> get the error that occured</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageAsEmlx" title="messageAsEmlx"></a>
+	<h3 class="subsubtitle method-title">messageAsEmlx</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message in the format Mail.app uses, Emlx.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)messageAsEmlx</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message in the format Mail.app uses, Emlx.</p>
+
+<p>This format stores the message headers, <a href="#//api/name/body">body</a>, and <a href="#//api/name/flags">flags</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageId" title="messageId"></a>
+	<h3 class="subsubtitle method-title">messageId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A machine readable ID that is guaranteed unique by the
+host that generated the message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)messageId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A machine readable ID that is guaranteed unique by the
+host that generated the message</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageSize" title="messageSize"></a>
+	<h3 class="subsubtitle method-title">messageSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message size in bytes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)messageSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message size in bytes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/references" title="references"></a>
+	<h3 class="subsubtitle method-title">references</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the list of messageIds <a href="#//api/name/from">from</a> the references field</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)references</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the list of messageIds <a href="#//api/name/from">from</a> the references field</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/render" title="render"></a>
+	<h3 class="subsubtitle method-title">render</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message rendered as the appropriate MIME and IMF content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)render</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message rendered as the appropriate MIME and IMF content.</p>
+
+<p>Use this only if you want the raw encoding of the message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replyTo" title="replyTo"></a>
+	<h3 class="subsubtitle method-title">replyTo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the list of people the message was in reply<a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)replyTo</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the list of people the message was in reply<a href="#//api/name/to">to</a>, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rfc822" title="rfc822"></a>
+	<h3 class="subsubtitle method-title">rfc822</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches <a href="#//api/name/from">from</a> the server the rfc822 content of the message, which are the headers and the message <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)rfc822</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return nil on error. Call method <a href="#//api/name/lastError">lastError</a> <a href="#//api/name/to">to</a> get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetches <a href="#//api/name/from">from</a> the server the rfc822 content of the message, which are the headers and the message <a href="#//api/name/body">body</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rfc822Header" title="rfc822Header"></a>
+	<h3 class="subsubtitle method-title">rfc822Header</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches <a href="#//api/name/from">from</a> the server the <a href="#//api/name/rfc822">rfc822</a> content of the message headers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)rfc822Header</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return nil on error. Call method <a href="#//api/name/lastError">lastError</a> <a href="#//api/name/to">to</a> get error if one occurred</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetches <a href="#//api/name/from">from</a> the server the <a href="#//api/name/rfc822">rfc822</a> content of the message headers.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sender" title="sender"></a>
+	<h3 class="subsubtitle method-title">sender</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the sender.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CTCoreAddress *)sender</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the sender.</p>
+
+<p>The sender which isn&rsquo;t always the actual person who sent the message, it&rsquo;s usually the
+address of the machine that sent the message. In reality, this method isn&rsquo;t very useful, use from: instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/senderDate" title="senderDate"></a>
+	<h3 class="subsubtitle method-title">senderDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the date as given in the Date mail field</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)senderDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the date as given in the Date mail field</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceNumber" title="sequenceNumber"></a>
+	<h3 class="subsubtitle method-title">sequenceNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the message sequence number, this number cannot be used across sessions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)sequenceNumber</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the message sequence number, this number cannot be used across sessions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBcc:" title="setBcc:"></a>
+	<h3 class="subsubtitle method-title">setBcc:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s <a href="#//api/name/bcc">bcc</a> addresses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBcc:(NSSet *)<em>addresses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addresses</em></dt>
+			<dd><p>A NSSet containing CTCoreAddress&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s <a href="#//api/name/bcc">bcc</a> addresses</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBody:" title="setBody:"></a>
+	<h3 class="subsubtitle method-title">setBody:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method sets the message <a href="#//api/name/body">body</a>. Plaintext only please!</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBody:(NSString *)<em>body</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method sets the message <a href="#//api/name/body">body</a>. Plaintext only please!</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCc:" title="setCc:"></a>
+	<h3 class="subsubtitle method-title">setCc:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s <a href="#//api/name/cc">cc</a> addresses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCc:(NSSet *)<em>addresses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addresses</em></dt>
+			<dd><p>A NSSet containing CTCoreAddress&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s <a href="#//api/name/cc">cc</a> addresses</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFrom:" title="setFrom:"></a>
+	<h3 class="subsubtitle method-title">setFrom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s <a href="#//api/name/from">from</a> addresses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setFrom:(NSSet *)<em>addresses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addresses</em></dt>
+			<dd><p>A NSSet containing CTCoreAddress&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s <a href="#//api/name/from">from</a> addresses</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setHTMLBody:" title="setHTMLBody:"></a>
+	<h3 class="subsubtitle method-title">setHTMLBody:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method <a href="#//api/name/to">to</a> set the <a href="#//api/name/body">body</a> if you have HTML content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setHTMLBody:(NSString *)<em>body</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method <a href="#//api/name/to">to</a> set the <a href="#//api/name/body">body</a> if you have HTML content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInReplyTo:" title="setInReplyTo:"></a>
+	<h3 class="subsubtitle method-title">setInReplyTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s in-reply<a href="#//api/name/to">to</a> messageIds</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setInReplyTo:(NSArray *)<em>messageIds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageIds</em></dt>
+			<dd><p>A NSArray containing NSString messageId&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s in-reply<a href="#//api/name/to">to</a> messageIds</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setReferences:" title="setReferences:"></a>
+	<h3 class="subsubtitle method-title">setReferences:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s <a href="#//api/name/references">references</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setReferences:(NSArray *)<em>messageIds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageIds</em></dt>
+			<dd><p>A NSArray containing NSString messageId&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s <a href="#//api/name/references">references</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setReplyTo:" title="setReplyTo:"></a>
+	<h3 class="subsubtitle method-title">setReplyTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s reply <a href="#//api/name/to">to</a> addresses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setReplyTo:(NSSet *)<em>addresses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addresses</em></dt>
+			<dd><p>A NSSet containing CTCoreAddress&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s reply <a href="#//api/name/to">to</a> addresses</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSequenceNumber:" title="setSequenceNumber:"></a>
+	<h3 class="subsubtitle method-title">setSequenceNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the message sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSequenceNumber:(NSUInteger)<em>sequenceNumber</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the message sequence number.</p>
+
+<p>This will NOT set any thing on the server.
+This is used <a href="#//api/name/to">to</a> assign sequence numbers after retrieving the message list.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSubject:" title="setSubject:"></a>
+	<h3 class="subsubtitle method-title">setSubject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will set the <a href="#//api/name/subject">subject</a> of the message, use this when composing e-mail.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSubject:(NSString *)<em>subject</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Will set the <a href="#//api/name/subject">subject</a> of the message, use this when composing e-mail.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTo:" title="setTo:"></a>
+	<h3 class="subsubtitle method-title">setTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the message&rsquo;s <a href="#//api/name/to">to</a> addresses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTo:(NSSet *)<em>addresses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addresses</em></dt>
+			<dd><p>A NSSet containing CTCoreAddress&rsquo;s</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the message&rsquo;s <a href="#//api/name/to">to</a> addresses</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subject" title="subject"></a>
+	<h3 class="subsubtitle method-title">subject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the subject of the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)subject</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the subject of the message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/to" title="to"></a>
+	<h3 class="subsubtitle method-title">to</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the list of people the message was sent to, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)to</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the list of people the message was sent to, returns an NSSet containing CTAddress&rsquo;s.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uid" title="uid"></a>
+	<h3 class="subsubtitle method-title">uid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSUInteger containing the messages UID. This number is unique across sessions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)uid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an NSUInteger containing the messages UID. This number is unique across sessions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CTCoreMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Central Atomics Inc.. All rights reserved. (Last updated: 2013-04-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

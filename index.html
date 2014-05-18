@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MailCore</title>
+  <link href="mailcore.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="normal">
+<p><a href="https://github.com/MailCore/MailCore2"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/></a></p>
+<div id="main">
+
+<div id="title-header">
+    <h1>MailCore</h1>
+    <h2>An e-mail library for Mac &amp; iOS</h2>
+    <img src="images/logo.png" alt="logo" />
+</div>
+
+<div id="wrapper">
+
+<p>MailCore is a Mac and iOS library designed to ease the pain of working with e-mail protocols. MailCore is batteries included with support for SMTP, IMAP, POP3, RFC822, MIME and rendering of HTML messages.</p>
+
+<hr />    
+
+<ul>
+<li><a href="#example">Getting Started</a></li>
+<li><a href="#gettingcode">Getting the Code</a></li>
+<li><a href="#docs">Documentation</a></li>
+<li><a href="#mailinglist">Mailing List</a></li>
+<li><a href="#apps">Apps Using MailCore</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#consulting">Consulting</a></li>
+<li><a href="#authors">Authors</a></li>
+</ul>
+
+
+
+<h2 id="announcing">Announcing MailCore 2!</h2>
+
+<p>From the authors of Sparrow and MailCore 1.0 comes the new and improved MailCore 2! MailCore has been completely redesigned from the ground up with a new blocks based API. It features:</p>
+
+<ul>
+<li><b>POP</b>, <b>IMAP</b>, and <b>SMTP</b> support</li>
+<li><b><a href="http://www.ietf.org/rfc/rfc0822.txt">RFC822</a></b> parser and generator</li>
+<li><b>UI widgets</b> for rendering HTML messages</li>
+<li><b>Asynchronous</b> APIs with Objective-C blocks</li>
+<li><b>iOS</b> and <b>Mac</b> support</li>
+<li><b>Portable</b> core engine in C++</li>
+</ul>
+
+<h2 id="example">Getting Started</h2>
+
+<h3>Fetching Messages</h3>
+<p>This example shows how to use IMAP to fetch messages from the GMail servers.</p>
+
+<script src="https://gist.github.com/mronge/5581549.js"></script>
+
+<h3>Sending a Message</h3>
+<p>This example shows how you can send email using MailCore.</p>
+
+<script src="https://gist.github.com/mronge/5694886.js"></script>
+
+<h3>More examples...</h3>
+<p>Check out more examples on the project <a href="https://github.com/MailCore/mailcore2/wiki#examples">wiki</a>.</p>
+
+<h2 id="gettingcode">Getting the Code</h2>
+
+<p>Checkout the code directly from git:</p>
+
+<pre><code class="bash">git clone https://github.com/MailCore/MailCore2.git 
+</code></pre>
+
+<p>From there follow the <a href="https://github.com/MailCore/mailcore2#installation">installation instructions</a>.</p>
+
+<h2 id="docs">Documentation</h2>
+
+<h3>Guides</h3>
+<ul>
+    <li><a href="https://github.com/MailCore/mailcore2#basic-imap-usage">Getting Started</a></li>
+</ul>
+
+<h3>Reference</h3>
+<ul>
+    <li><a href="mailcore2/api/index.html">API docs</a></li>
+</ul>
+
+<h3>Sample Code</h3>
+<ul>
+    <li>Sample code is included with the project on Github <a href="https://github.com/MailCore/mailcore2/tree/master/example">here</a>.</li>
+</ul>
+
+<h3>Migrating</h3>
+<ul>
+    <li><a href="https://github.com/MailCore/mailcore2/wiki/Changes-From-The-Original-MailCore">Migrating from MailCore 1.0</a></li>
+</ul>
+
+<h2 id="mailinglist">Mailing List</h2>
+
+<p>There is a low traffic mailing list hosted on <a href="http://librelist.com/">Librelist</a>.</p>
+
+<ul>
+<li>To join send an email to <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#109;&#x61;&#x69;&#108;&#x63;&#x6f;&#114;&#x65;&#x40;&#108;&#x69;&#x62;&#x72;&#x65;&#x6c;&#105;&#115;&#116;&#x2e;&#99;&#111;&#x6d;">&#x6d;&#97;&#x69;&#108;&#x63;&#111;&#x72;&#101;&#64;&#x6c;&#105;&#x62;&#x72;&#x65;&#108;&#x69;&#x73;&#116;&#46;&#99;&#111;&#x6d;</a> and reply to the confirmation e-mail. To unsubscribe at anytime send an e-mail to <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x6d;&#x61;&#x69;&#x6c;&#x63;&#111;&#x72;&#101;&#x2d;&#117;&#x6e;&#x73;&#117;&#98;&#x73;&#x63;&#114;&#105;&#x62;&#x65;&#64;&#x6c;&#105;&#98;&#114;&#101;&#x6c;&#x69;&#115;&#x74;&#46;&#x63;&#x6f;&#x6d;">&#x6d;&#x61;&#x69;&#x6c;&#x63;&#x6f;&#x72;&#x65;&#45;&#x75;&#110;&#x73;&#x75;&#x62;&#x73;&#99;&#x72;&#105;&#x62;&#x65;&#x40;&#108;&#105;&#98;&#x72;&#101;&#x6c;&#105;&#115;&#116;&#46;&#x63;&#x6f;&#109;</a>.</li>
+<li>Mailing list archives are <a href="http://librelist.com/browser/mailcore/">available.</a></li>
+<li>For contributors we have a dev mailing list, send an email to this address to subscribe: <a href='mailto&#58;ma%69%6Cc%6Fr&#37;6&#53;&#100;ev&#64;l&#37;69br%65&#37;6&#67;i%73t&#46;&#99;om'>ma&#105;l&#99;oredev&#64;lib&#114;e&#108;ist&#46;co&#109;</a></li>
+</ul>
+
+
+<h2 id="apps">Cool Apps Using MailCore</h2>
+
+<ul>
+<li><a href="http://getpebble.com/">Pebble</a></li>
+<li><a href="http://airmailapp.info/">Airmail</a></li>
+<li><a href="http://www.getosito.com/">Osito</a></li>
+<li><a href="http://qsapp.com/">Quicksilver</a></li>
+<li><a href="http://www.triage.cc/">Triage</a></li>
+<li><a href="http://www.goldenhillsoftware.com/">CloudPull</a></li>
+<li><a href="http://mailcallapp.com/">Mail Call</a></li>
+<li><a href="http://getboxer.com/">Boxer</a></li>
+<li><a href="http://www.inboxruler.com/">InboxRuler</a></li>
+<li><a href="http://www.fileboard.com/">Fileboard</a></li>
+<li><a href="https://code.google.com/p/remail-iphone/">Remail</a></li>
+<li><a href="http://handyapp.com/fwdmail/">FwdMail</a></li>
+<li><a href="http://www.emailganizer.com/">eMailGanizer</a></li>
+<li><a href="http://iphoto2gmail.notoptimal.net/">iPhoto2Gmail</a></li>
+<li><a href="http://www.prioritiz.com/">Prioritiz</a></li>
+<li><a href="http://www.enotifyapp.com/">eNotify</a></li>
+<li><a href="https://itunes.apple.com/us/app/mail-pilot/id616785421?mt=8">Mail Pilot</a></li>
+<li><a href="https://itunes.apple.com/us/app/offline-mail-email-gmail-imap/id470659075?mt=8">Offline Mail</a></li>
+<li><a href="https://itunes.apple.com/us/app/walnut/id574848194?mt=8">WALNUT</a></li>
+<li><a href="http://www.cronomail.com/">Crono</a></li>
+<li>BackUp Gmail</li>
+<li>OneMail</li>
+<li>Notify</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+
+<h3>Q: What happened to MailCore 1.0?</h3>
+<p>A: <a href="https://www.github.com/mailcore/mailcore">MailCore 1.0</a> will continue to be maintained. Under the hood both libraries use the same C library <a href="https://github.com/dinhviethoa/libetpan">libEtPan</a>. There is a synchronous C++ interface in MailCore 2.0 that would be a suitable replacement for the MailCore 1.0 API. Unfortunately to create a more flexible and asynchronous API we had to start over.</p>
+
+<h3>Q: What platforms does MailCore support?</h3>
+<p>A: Out of the box iOS and Mac OS X are supported. However the core engine is portable C/C++ and could be ported to Linux and Windows, which we are hoping to do. We'd love to see more language bindings against the engine, perhaps Node.js, Python, Ruby?</p>
+
+<h3>Q: Can I use MailCore in my commercial app?</h3>
+<p>A: Absolutely! MailCore is BSD licensed and all dependencies have licenses that are compatible with commercial software</p>
+
+<h3>Q: Why no CocoaPods love?</h3>
+<p>A: We <b>REALLY</b> want to support CocoaPods, but we we first need to create Pods for all the C dependencies.</p>
+
+<h3>Q: Can I help out?</h3>
+<p>Yes, please do! Fork the repo on GitHub and get started hacking or writing docs! Contributions are done using GitHub pull requests. Check the <a href="https://github.com/MailCore/mailcore2/blob/master/TODO.md">TODO file</a> for items to work on. </p>
+
+<h3>More...</h3>
+
+<p>More FAQs are available on the GitHub <a href="https://github.com/MailCore/mailcore2/wiki/FAQ">wiki</a>.</p>
+
+<h2 id="consulting">Consulting</h2>
+
+<p>Consulting services are available via <a href="http://www.astro-hq.com">Astro HQ</a>. At Astro HQ we have years of experience working on email apps. If you need custom e-mail functionality developed, please get in touch via our website. </p>
+
+<h2 id="authors">Authors</h2>
+
+<p>Thanks from the MailCore team. </p>
+
+<p>Matt Ronge<br/>
+<a href="http://www.twitter.com/mronge">@mronge</a>
+</p>
+
+<p>Hoà V. Dinh<br/>
+<a href="http://www.twitter.com/dinhvh">@dinhvh</a>
+</p>
+
+<p>Robert Widmann<br/>
+<a href="http://www.twitter.com/codafi_">@codafi_</a>
+</p>
+
+<p>Jonathan Willing<br/>
+<a href="http://www.twitter.com/j_willing">@j_willing</a>
+</p>
+
+
+</div>
+<div id="addendum">
+    <p>Logo designed by <a href="http://www.twitter.com/adanperez">Adan Perez</a>. The logo is a modified version of the <a href="http://thenounproject.com/noun/mail/#icon-No91">Mail icon</a> by <a href="http://thenounproject.com">The Noun Project</a>, used under a CC BY license.<br/>
+        &copy; 2012-2013 Matt Ronge. All Rights Reserved. </p>
+</div>
+</div>
+</body>
+</html>
