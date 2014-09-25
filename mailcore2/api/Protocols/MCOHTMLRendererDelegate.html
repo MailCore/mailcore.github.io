@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MCOHTMLRendererDelegate Protocol Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -45,6 +44,8 @@
 	<option value="instance_methods">Instance Methods</option>
 	
 	<option value="//api/name/MCOAbstractMessage:canPreviewPart:">&nbsp;&nbsp;&nbsp;&nbsp;- MCOAbstractMessage:canPreviewPart:</option>
+	
+	<option value="//api/name/MCOAbstractMessage:cleanHTMLForPart:">&nbsp;&nbsp;&nbsp;&nbsp;- MCOAbstractMessage:cleanHTMLForPart:</option>
 	
 	<option value="//api/name/MCOAbstractMessage:filterHTMLForMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- MCOAbstractMessage:filterHTMLForMessage:</option>
 	
@@ -104,6 +105,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MCOAbstractMessage:canPreviewPart:">MCOAbstractMessage:canPreviewPart:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MCOAbstractMessage:cleanHTMLForPart:">MCOAbstractMessage:cleanHTMLForPart:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MCOAbstractMessage:filterHTMLForMessage:">MCOAbstractMessage:filterHTMLForMessage:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MCOAbstractMessage:filterHTMLForPart:">MCOAbstractMessage:filterHTMLForPart:</a></span></li>
@@ -159,8 +162,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -192,31 +195,24 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:canPreviewPart:">&ndash;&nbsp;MCOAbstractMessage:canPreviewPart:</a></code>
-		<span class="tooltip"><p>This delegate method should return YES if it can render a preview of the attachment as an image.
-part is always a single part.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:shouldShowPart:">&ndash;&nbsp;MCOAbstractMessage:shouldShowPart:</a></code>
-		<span class="tooltip"><p>This delegate method should return YES if the part should be rendered.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateValuesForHeader:">&ndash;&nbsp;MCOAbstractMessage:templateValuesForHeader:</a></code>
-		<span class="tooltip"><p>This delegate method returns the values to be applied to the template for the given header.
-See the content of MCHTMLRendererCallback.cpp for the default values of the header.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateValuesForPart:">&ndash;&nbsp;MCOAbstractMessage:templateValuesForPart:</a></code>
-		<span class="tooltip"><p>This delegate method returns the values to be applied to the template for the given attachment.
-See the content of MCHTMLRendererCallback.cpp for the default values of the attachment.</p></span>
 	</span>
 	
 	
@@ -231,57 +227,48 @@ See the content of MCHTMLRendererCallback.cpp for the default values of the atta
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateForMainHeader:">&ndash;&nbsp;MCOAbstractMessage:templateForMainHeader:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template for the main header of the message.
-See the content of MCHTMLRendererCallback.cpp for the default values of the template.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateForImage:">&ndash;&nbsp;MCOAbstractMessage:templateForImage:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template an image attachment.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateForAttachment:">&ndash;&nbsp;MCOAbstractMessage:templateForAttachment:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template attachment other than images.
-See the content of MCHTMLRendererCallback.cpp for the default values of the template.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage_templateForMessage:">&ndash;&nbsp;MCOAbstractMessage_templateForMessage:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template of the main message.
-It should include HEADER and a BODY values.
-See the content of MCHTMLRendererCallback.cpp for the default values of the template.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateForEmbeddedMessage:">&ndash;&nbsp;MCOAbstractMessage:templateForEmbeddedMessage:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template of an embedded message (included as attachment).
-It should include HEADER and a BODY values.
-See the content of MCHTMLRendererCallback.cpp for the default values of the template.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:templateForEmbeddedMessageHeader:">&ndash;&nbsp;MCOAbstractMessage:templateForEmbeddedMessageHeader:</a></code>
-		<span class="tooltip"><p>This delegate method returns the template for the header of an embedded message.
-See the content of MCHTMLRendererCallback.cpp for the default values of the template.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage_templateForAttachmentSeparator:">&ndash;&nbsp;MCOAbstractMessage_templateForAttachmentSeparator:</a></code>
-		<span class="tooltip"><p>This delegate method returns the separator between the text of the message and the attachments.
-This delegate method returns the template for the header of an embedded message.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MCOAbstractMessage:cleanHTMLForPart:">&ndash;&nbsp;MCOAbstractMessage:cleanHTMLForPart:</a></code>
 	</span>
 	
 	
@@ -296,16 +283,12 @@ This delegate method returns the template for the header of an embedded message.
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:filterHTMLForPart:">&ndash;&nbsp;MCOAbstractMessage:filterHTMLForPart:</a></code>
-		<span class="tooltip"><p>This delegate method will apply the filter to HTML rendered content of a given text part.
-For example, it could filter the CSS content.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MCOAbstractMessage:filterHTMLForMessage:">&ndash;&nbsp;MCOAbstractMessage:filterHTMLForMessage:</a></code>
-		<span class="tooltip"><p>This delegate method will apply a filter to the whole HTML content.
-For example, it could collapse the quoted messages.</p></span>
 	</span>
 	
 	
@@ -354,6 +337,44 @@ part is always a single part.</p>
 		<p>If the attachment can be previewed, it will be rendered using the image template.
 If not, the attachment template will be used.</p>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOHTMLRendererDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MCOAbstractMessage:cleanHTMLForPart:" title="MCOAbstractMessage:cleanHTMLForPart:"></a>
+	<h3 class="subsubtitle method-title">MCOAbstractMessage:cleanHTMLForPart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This delegate method cleans HTML content.
+For example, it could fix broken tags, add missing <html>, <body> tags.
+Default implementation uses HTMLCleaner::cleanHTML to clean HTML content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)MCOAbstractMessage:(MCOAbstractMessage *)<em>msg</em> cleanHTMLForPart:(NSString *)<em>html</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -816,6 +837,8 @@ See the content of MCHTMLRendererCallback.cpp for the default values of the temp
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -826,9 +849,9 @@ See the content of MCHTMLRendererCallback.cpp for the default values of the temp
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 MailCore2. All rights reserved. (Last updated: 2013-09-24)</span><br />
+						<p><span class="copyright">&copy; 2014 MailCore2. All rights reserved. (Last updated: 2014-09-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

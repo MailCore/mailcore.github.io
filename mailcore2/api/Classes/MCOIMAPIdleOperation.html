@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MCOIMAPIdleOperation Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,7 +43,11 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/cancel">&nbsp;&nbsp;&nbsp;&nbsp;- cancel</option>
+	
 	<option value="//api/name/interruptIdle">&nbsp;&nbsp;&nbsp;&nbsp;- interruptIdle</option>
+	
+	<option value="//api/name/operationCompleted">&nbsp;&nbsp;&nbsp;&nbsp;- operationCompleted</option>
 	
 	<option value="//api/name/start:">&nbsp;&nbsp;&nbsp;&nbsp;- start:</option>
 	
@@ -76,7 +79,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancel">cancel</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interruptIdle">interruptIdle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationCompleted">operationCompleted</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start:">start:</a></span></li>
 	
@@ -104,15 +111,15 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/MCOIMAPBaseOperation.html">MCOIMAPBaseOperation</a> : MCOOperation : NSObject</td>
+	<td class="specification-value"><a href="../Classes/MCOIMAPBaseOperation.html">MCOIMAPBaseOperation</a> : <a href="../Classes/MCOOperation.html">MCOOperation</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">MCOIMAPIdleOperation.h<br />MCOIMAPIdleOperation.mm</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -132,20 +139,38 @@ See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a></p>
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/interruptIdle">&ndash;&nbsp;interruptIdle</a></code>
-		<span class="tooltip"><p>Stop the current IDLE session</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/start:">&ndash;&nbsp;start:</a></code>
-		<span class="tooltip"><p>Starts IDLE</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationCompleted">&ndash;&nbsp;operationCompleted</a></code>
 	</span>
 	
 	
@@ -165,6 +190,42 @@ See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a></p>
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="subsubtitle method-title">cancel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOOperation.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/interruptIdle" title="interruptIdle"></a>
@@ -197,6 +258,43 @@ See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a></p>
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">MCOIMAPIdleOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationCompleted" title="operationCompleted"></a>
+	<h3 class="subsubtitle method-title">operationCompleted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This methods is called on the main thread when the asynchronous operation is finished.
+Needs to be overriden by subclasses.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)operationCompleted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOOperation.h</code><br />
 	</div>				
 	
 	
@@ -258,6 +356,8 @@ See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a></p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -268,9 +368,9 @@ See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a></p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 MailCore2. All rights reserved. (Last updated: 2013-09-24)</span><br />
+						<p><span class="copyright">&copy; 2014 MailCore2. All rights reserved. (Last updated: 2014-09-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

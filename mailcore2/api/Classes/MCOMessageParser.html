@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MCOMessageParser Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -61,6 +60,8 @@
 	
 	<option value="//api/name/plainTextBodyRendering">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextBodyRendering</option>
 	
+	<option value="//api/name/plainTextBodyRenderingAndStripWhitespace:">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextBodyRenderingAndStripWhitespace:</option>
+	
 	<option value="//api/name/plainTextRendering">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextRendering</option>
 	
 	
@@ -109,6 +110,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextBodyRendering">plainTextBodyRendering</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextBodyRenderingAndStripWhitespace:">plainTextBodyRenderingAndStripWhitespace:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextRendering">plainTextRendering</a></span></li>
 	
 </ul></li>
@@ -142,8 +145,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -169,57 +172,54 @@ you need to parse it.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/messageParserWithData:">+&nbsp;messageParserWithData:</a></code>
-		<span class="tooltip"><p>returns a parsed message from the given RFC 822 <a href="#//api/name/data">data</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithData:">&ndash;&nbsp;initWithData:</a></code>
-		<span class="tooltip"><p><a href="#//api/name/data">data</a> is the RFC 822 formatted message.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mainPart">&ndash;&nbsp;mainPart</a></code>
-		<span class="tooltip"><p>It&rsquo;s the main part of the message. It can be <a href="../Classes/MCOMessagePart.html">MCOMessagePart</a>, <a href="../Classes/MCOMultipart.html">MCOMultipart</a> or <a href="../Classes/MCOAttachment.html">MCOAttachment</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/data">&ndash;&nbsp;data</a></code>
-		<span class="tooltip"><p>data of the RFC 822 formatted message. It&rsquo;s the input of the parser.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/htmlRenderingWithDelegate:">&ndash;&nbsp;htmlRenderingWithDelegate:</a></code>
-		<span class="tooltip"><p>HTML rendering of the message to be displayed in a web view. delegate can be nil.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/htmlBodyRendering">&ndash;&nbsp;htmlBodyRendering</a></code>
-		<span class="tooltip"><p>HTML rendering of the body of the message to be displayed in a web view.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/plainTextRendering">&ndash;&nbsp;plainTextRendering</a></code>
-		<span class="tooltip"><p>Text rendering of the message.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/plainTextBodyRendering">&ndash;&nbsp;plainTextBodyRendering</a></code>
-		<span class="tooltip"><p>Text rendering of the body of the message. All end of line will be removed and white spaces cleaned up.
-This method can be used to generate the summary of the message.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/plainTextBodyRenderingAndStripWhitespace:">&ndash;&nbsp;plainTextBodyRenderingAndStripWhitespace:</a></code>
 	</span>
 	
 	
@@ -500,6 +500,43 @@ This method can be used to generate the summary of the message.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/plainTextBodyRenderingAndStripWhitespace:" title="plainTextBodyRenderingAndStripWhitespace:"></a>
+	<h3 class="subsubtitle method-title">plainTextBodyRenderingAndStripWhitespace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Text rendering of the body of the message. All end of line will be removed and white spaces cleaned up if requested.
+This method can be used to generate the summary of the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)plainTextBodyRenderingAndStripWhitespace:(BOOL)<em>stripWhitespace</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOMessageParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/plainTextRendering" title="plainTextRendering"></a>
 	<h3 class="subsubtitle method-title">plainTextRendering</h3>
 	
@@ -538,6 +575,8 @@ This method can be used to generate the summary of the message.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -548,9 +587,9 @@ This method can be used to generate the summary of the message.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 MailCore2. All rights reserved. (Last updated: 2013-09-24)</span><br />
+						<p><span class="copyright">&copy; 2014 MailCore2. All rights reserved. (Last updated: 2014-09-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

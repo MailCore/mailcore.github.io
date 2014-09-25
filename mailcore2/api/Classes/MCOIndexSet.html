@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MCOIndexSet Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -55,6 +54,8 @@
 	
 	<option value="//api/name/addIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- addIndex:</option>
 	
+	<option value="//api/name/addIndexSet:">&nbsp;&nbsp;&nbsp;&nbsp;- addIndexSet:</option>
+	
 	<option value="//api/name/addRange:">&nbsp;&nbsp;&nbsp;&nbsp;- addRange:</option>
 	
 	<option value="//api/name/allRanges">&nbsp;&nbsp;&nbsp;&nbsp;- allRanges</option>
@@ -65,6 +66,8 @@
 	
 	<option value="//api/name/enumerateIndexes:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateIndexes:</option>
 	
+	<option value="//api/name/intersectsIndexSet:">&nbsp;&nbsp;&nbsp;&nbsp;- intersectsIndexSet:</option>
+	
 	<option value="//api/name/intersectsRange:">&nbsp;&nbsp;&nbsp;&nbsp;- intersectsRange:</option>
 	
 	<option value="//api/name/nsIndexSet">&nbsp;&nbsp;&nbsp;&nbsp;- nsIndexSet</option>
@@ -72,6 +75,8 @@
 	<option value="//api/name/rangesCount">&nbsp;&nbsp;&nbsp;&nbsp;- rangesCount</option>
 	
 	<option value="//api/name/removeIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- removeIndex:</option>
+	
+	<option value="//api/name/removeIndexSet:">&nbsp;&nbsp;&nbsp;&nbsp;- removeIndexSet:</option>
 	
 	<option value="//api/name/removeRange:">&nbsp;&nbsp;&nbsp;&nbsp;- removeRange:</option>
 	
@@ -115,6 +120,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addIndex:">addIndex:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addIndexSet:">addIndexSet:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addRange:">addRange:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allRanges">allRanges</a></span></li>
@@ -125,6 +132,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateIndexes:">enumerateIndexes:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/intersectsIndexSet:">intersectsIndexSet:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/intersectsRange:">intersectsRange:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nsIndexSet">nsIndexSet</a></span></li>
@@ -132,6 +141,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangesCount">rangesCount</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeIndex:">removeIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeIndexSet:">removeIndexSet:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeRange:">removeRange:</a></span></li>
 	
@@ -162,20 +173,20 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSCopying</td>
+	<td class="specification-value">NSCoding<br />NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">MCOIndexSet.h<br />MCOIndexSet.mm</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>similar to NSMutableIndexSet but supports int64_t</p>
+						<p>similar to NSMutableIndexSet but supports int64_t.  MCORange has a location (uint64_t) and length (uint64_t).</p>
 					</div>
 					
 					
@@ -194,98 +205,102 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/indexSet">+&nbsp;indexSet</a></code>
-		<span class="tooltip"><p>Creates an empty index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/indexSetWithRange:">+&nbsp;indexSetWithRange:</a></code>
-		<span class="tooltip"><p>Creates an index set that contains a range of integers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/indexSetWithIndex:">+&nbsp;indexSetWithIndex:</a></code>
-		<span class="tooltip"><p>Creates an index set with a single integer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/count">&ndash;&nbsp;count</a></code>
-		<span class="tooltip"><p>Returns the number of integers in that index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addIndex:">&ndash;&nbsp;addIndex:</a></code>
-		<span class="tooltip"><p>Adds an integer to the index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeIndex:">&ndash;&nbsp;removeIndex:</a></code>
-		<span class="tooltip"><p>Removes an integer from the index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/containsIndex:">&ndash;&nbsp;containsIndex:</a></code>
-		<span class="tooltip"><p>Returns YES if the index set contains the given integer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addRange:">&ndash;&nbsp;addRange:</a></code>
-		<span class="tooltip"><p>Adds a range of integers to the index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeRange:">&ndash;&nbsp;removeRange:</a></code>
-		<span class="tooltip"><p>Removes a range of integers from the index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/intersectsRange:">&ndash;&nbsp;intersectsRange:</a></code>
-		<span class="tooltip"><p>Removes all integers that are not in the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addIndexSet:">&ndash;&nbsp;addIndexSet:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeIndexSet:">&ndash;&nbsp;removeIndexSet:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/intersectsIndexSet:">&ndash;&nbsp;intersectsIndexSet:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/allRanges">&ndash;&nbsp;allRanges</a></code>
-		<span class="tooltip"><p>Returns all the ranges of ths index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/rangesCount">&ndash;&nbsp;rangesCount</a></code>
-		<span class="tooltip"><p>Returns the number of ranges in this index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enumerateIndexes:">&ndash;&nbsp;enumerateIndexes:</a></code>
-		<span class="tooltip"><p>Enumerates all the indexes of the index set.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/nsIndexSet">&ndash;&nbsp;nsIndexSet</a></code>
-		<span class="tooltip"><p>Returns an NSIndexSet from a MCOIndexSet</p></span>
 	</span>
 	
 	
@@ -433,6 +448,42 @@
     
 
 	<div class="method-subsection method-declaration"><code>- (void)addIndex:(uint64_t)<em>idx</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIndexSet.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addIndexSet:" title="addIndexSet:"></a>
+	<h3 class="subsubtitle method-title">addIndexSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds all indexes from an other index set to the index set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addIndexSet:(MCOIndexSet *)<em>indexSet</em></code></div>
 
     
 	
@@ -637,6 +688,42 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/intersectsIndexSet:" title="intersectsIndexSet:"></a>
+	<h3 class="subsubtitle method-title">intersectsIndexSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all integers that are not in the given index set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)intersectsIndexSet:(MCOIndexSet *)<em>indexSet</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIndexSet.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/intersectsRange:" title="intersectsRange:"></a>
 	<h3 class="subsubtitle method-title">intersectsRange:</h3>
 	
@@ -781,6 +868,42 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/removeIndexSet:" title="removeIndexSet:"></a>
+	<h3 class="subsubtitle method-title">removeIndexSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all indexes from an other index set from the index set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeIndexSet:(MCOIndexSet *)<em>indexSet</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIndexSet.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/removeRange:" title="removeRange:"></a>
 	<h3 class="subsubtitle method-title">removeRange:</h3>
 	
@@ -819,6 +942,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -829,9 +954,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 MailCore2. All rights reserved. (Last updated: 2013-09-24)</span><br />
+						<p><span class="copyright">&copy; 2014 MailCore2. All rights reserved. (Last updated: 2014-09-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>
