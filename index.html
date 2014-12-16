@@ -43,7 +43,7 @@
 <li><b><a href="http://www.ietf.org/rfc/rfc0822.txt">RFC822</a></b> parser and generator</li>
 <li><b>UI widgets</b> for rendering HTML messages</li>
 <li><b>Asynchronous</b> APIs with Objective-C blocks</li>
-<li><b>iOS</b> and <b>Mac</b> support</li>
+<li><b>iOS</b>, <b>Mac</b>, <b>Windows</b> and <b>Linux</b> support</li>
 <li><b>Portable</b> core engine in C++</li>
 </ul>
 
@@ -108,10 +108,12 @@
 
 <ul>
 <li><a href="https://www.relateiq.com/">RelateIQ</a></li>
+<li><a href="http://immediatelyapp.com/">Immediately</a></li>
+<li><a href="http://mailtime.com/">MailTime</a></li>
 <li><a href="http://www.dispatchapp.net/">Dispatch</a></li>
 <li><a href="http://mailsteward.com/">MailSteward</a></li>
 <li><a href="http://getpebble.com/">Pebble</a></li>
-<li><a href="http://airmailapp.info/">Airmail</a></li>
+<li><a href="http://airmailapp.com/">Airmail</a></li>
 <li><a href="http://www.birdseyemail.com/">birdseye</a></li>
 <li><a href="http://www.forkm.com/">ForkM</a></li>
 <li><a href="http://qsapp.com/">Quicksilver</a></li>
@@ -142,13 +144,10 @@
 <p>A: <a href="https://www.github.com/mailcore/mailcore">MailCore 1.0</a> will continue to be maintained. Under the hood both libraries use the same C library <a href="https://github.com/dinhviethoa/libetpan">libEtPan</a>. There is a synchronous C++ interface in MailCore 2.0 that would be a suitable replacement for the MailCore 1.0 API. Unfortunately to create a more flexible and asynchronous API we had to start over.</p>
 
 <h3>Q: What platforms does MailCore support?</h3>
-<p>A: Out of the box iOS and Mac OS X are supported. However the core engine is portable C/C++ and could be ported to Linux and Windows, which we are hoping to do. We'd love to see more language bindings against the engine, perhaps Node.js, Python, Ruby?</p>
+<p>A: Out of the box iOS, Mac OS X, Linux and Windows are supported. However the core engine is portable C/C++ and could be ported to Android, which we are hoping to do. We'd love to see more language bindings against the engine, perhaps Node.js, Python, Ruby?</p>
 
 <h3>Q: Can I use MailCore in my commercial app?</h3>
 <p>A: Absolutely! MailCore is BSD licensed and all dependencies have licenses that are compatible with commercial software</p>
-
-<h3>Q: Why no CocoaPods love?</h3>
-<p>A: We <b>REALLY</b> want to support CocoaPods, but we we first need to create Pods for all the C dependencies.</p>
 
 <h3>Q: Can I help out?</h3>
 <p>Yes, please do! Fork the repo on GitHub and get started hacking or writing docs! Contributions are done using GitHub pull requests. Check the <a href="https://github.com/MailCore/mailcore2/blob/master/TODO.md">TODO file</a> for items to work on. </p>
