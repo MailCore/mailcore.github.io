@@ -1,0 +1,784 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MCOAddress Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore2 </a></h1>
+				<a id="developerHome" href="../index.html">MailCore2</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MCOAddress Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/displayName">&nbsp;&nbsp;&nbsp;&nbsp;displayName</option>
+	
+	<option value="//api/name/mailbox">&nbsp;&nbsp;&nbsp;&nbsp;mailbox</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/addressWithDisplayName:mailbox:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressWithDisplayName:mailbox:</option>
+	
+	<option value="//api/name/addressWithMailbox:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressWithMailbox:</option>
+	
+	<option value="//api/name/addressWithNonEncodedRFC822String:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressWithNonEncodedRFC822String:</option>
+	
+	<option value="//api/name/addressWithRFC822String:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressWithRFC822String:</option>
+	
+	<option value="//api/name/addressesWithNonEncodedRFC822String:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressesWithNonEncodedRFC822String:</option>
+	
+	<option value="//api/name/addressesWithRFC822String:">&nbsp;&nbsp;&nbsp;&nbsp;+ addressesWithRFC822String:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/RFC822String">&nbsp;&nbsp;&nbsp;&nbsp;- RFC822String</option>
+	
+	<option value="//api/name/nonEncodedRFC822String">&nbsp;&nbsp;&nbsp;&nbsp;- nonEncodedRFC822String</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayName">displayName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mailbox">mailbox</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressWithDisplayName:mailbox:">addressWithDisplayName:mailbox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressWithMailbox:">addressWithMailbox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressWithNonEncodedRFC822String:">addressWithNonEncodedRFC822String:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressWithRFC822String:">addressWithRFC822String:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressesWithNonEncodedRFC822String:">addressesWithNonEncodedRFC822String:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addressesWithRFC822String:">addressesWithRFC822String:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RFC822String">RFC822String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nonEncodedRFC822String">nonEncodedRFC822String</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MCOAddress Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MCOAddress Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding<br />NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MCOAddress.h<br />MCOAddress.mm</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressWithDisplayName:mailbox:">+&nbsp;addressWithDisplayName:mailbox:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressWithMailbox:">+&nbsp;addressWithMailbox:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressWithRFC822String:">+&nbsp;addressWithRFC822String:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressWithNonEncodedRFC822String:">+&nbsp;addressWithNonEncodedRFC822String:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressesWithRFC822String:">+&nbsp;addressesWithRFC822String:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addressesWithNonEncodedRFC822String:">+&nbsp;addressesWithNonEncodedRFC822String:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayName">&nbsp;&nbsp;displayName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mailbox">&nbsp;&nbsp;mailbox</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/RFC822String">&ndash;&nbsp;RFC822String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nonEncodedRFC822String">&ndash;&nbsp;nonEncodedRFC822String</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/displayName" title="displayName"></a>
+	<h3 class="subsubtitle method-title">displayName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the display name of the address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *displayName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mailbox" title="mailbox"></a>
+	<h3 class="subsubtitle method-title">mailbox</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the mailbox of the address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *mailbox</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addressWithDisplayName:mailbox:" title="addressWithDisplayName:mailbox:"></a>
+	<h3 class="subsubtitle method-title">addressWithDisplayName:mailbox:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an address with a display name and a <a href="#//api/name/mailbox">mailbox</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (MCOAddress *)addressWithDisplayName:(NSString *)<em>displayName</em> mailbox:(NSString *)<em>mailbox</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Example: [MCOAddress addressWithDisplayName:@"DINH Viêt Hoà" mailbox:@"hoa@etpan.org"] 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addressWithMailbox:" title="addressWithMailbox:"></a>
+	<h3 class="subsubtitle method-title">addressWithMailbox:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an address with only a <a href="#//api/name/mailbox">mailbox</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (MCOAddress *)addressWithMailbox:(NSString *)<em>mailbox</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Example: [MCOAddress addressWithMailbox:@"hoa@etpan.org"]
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addressWithNonEncodedRFC822String:" title="addressWithNonEncodedRFC822String:"></a>
+	<h3 class="subsubtitle method-title">addressWithNonEncodedRFC822String:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an address with a non-MIME-encoded RFC822 string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (MCOAddress *)addressWithNonEncodedRFC822String:(NSString *)<em>nonEncodedRFC822String</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Example: [MCOAddress addressWithNonEncodedRFC822String:@"DINH Viêt Hoà &lt;hoa@etpan.org&gt;"]
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addressWithRFC822String:" title="addressWithRFC822String:"></a>
+	<h3 class="subsubtitle method-title">addressWithRFC822String:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an address with a RFC822 string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (MCOAddress *)addressWithRFC822String:(NSString *)<em>RFC822String</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Example: [MCOAddress addressWithRFC822String:@"DINH Vi=C3=AAt Ho=C3=A0 &lt;hoa@etpan.org&gt;"]
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addressesWithNonEncodedRFC822String:" title="addressesWithNonEncodedRFC822String:"></a>
+	<h3 class="subsubtitle method-title">addressesWithNonEncodedRFC822String:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSArray of MCOAddress objects that contain the parsed
+forms of non-encoded RFC822 addresses.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)addressesWithNonEncodedRFC822String:(NSString *)<em>string</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: @[ &ldquo;DINH Viêt Hoà <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#104;&#x6f;&#x61;&#64;&#x65;&#116;&#112;&#x61;&#x6e;&#46;&#x6f;&#114;&#x67;">&#104;&#111;&#97;&#64;&#x65;&#x74;&#x70;&#x61;&#x6e;&#x2e;&#111;&#x72;&#x67;</a>&rdquo; ]</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addressesWithRFC822String:" title="addressesWithRFC822String:"></a>
+	<h3 class="subsubtitle method-title">addressesWithRFC822String:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSArray of MCOAddress objects that contain the parsed
+forms of the RFC822 encoded addresses.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)addressesWithRFC822String:(NSString *)<em>string</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: @[ @&ldquo;DINH Vi=C3=AAt Ho=C3=A0 <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#104;&#111;&#x61;&#64;&#101;&#116;&#x70;&#97;&#x6e;&#x2e;&#111;&#114;&#103;">&#104;&#111;&#x61;&#x40;&#x65;&#116;&#112;&#x61;&#110;&#46;&#111;&#x72;&#103;</a>&rdquo; ]</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/RFC822String" title="RFC822String"></a>
+	<h3 class="subsubtitle method-title">RFC822String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the RFC822 encoding of the address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)RFC822String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>For example: "DINH Vi=C3=AAt Ho=C3=A0 &lt;hoa@etpan.org&gt;"
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nonEncodedRFC822String" title="nonEncodedRFC822String"></a>
+	<h3 class="subsubtitle method-title">nonEncodedRFC822String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the non-MIME-encoded RFC822 encoding of the address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)nonEncodedRFC822String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>For example: "DINH Viêt Hoà &lt;hoa@etpan.org&gt;"
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MailCore2. All rights reserved. (Last updated: 2015-01-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

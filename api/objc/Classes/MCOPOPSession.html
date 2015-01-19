@@ -1,0 +1,1291 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MCOPOPSession Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore2 </a></h1>
+				<a id="developerHome" href="../index.html">MailCore2</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MCOPOPSession Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/authType">&nbsp;&nbsp;&nbsp;&nbsp;authType</option>
+	
+	<option value="//api/name/checkCertificateEnabled">&nbsp;&nbsp;&nbsp;&nbsp;checkCertificateEnabled</option>
+	
+	<option value="//api/name/connectionLogger">&nbsp;&nbsp;&nbsp;&nbsp;connectionLogger</option>
+	
+	<option value="//api/name/connectionType">&nbsp;&nbsp;&nbsp;&nbsp;connectionType</option>
+	
+	<option value="//api/name/dispatchQueue">&nbsp;&nbsp;&nbsp;&nbsp;dispatchQueue</option>
+	
+	<option value="//api/name/hostname">&nbsp;&nbsp;&nbsp;&nbsp;hostname</option>
+	
+	<option value="//api/name/operationQueueRunning">&nbsp;&nbsp;&nbsp;&nbsp;operationQueueRunning</option>
+	
+	<option value="//api/name/operationQueueRunningChangeBlock">&nbsp;&nbsp;&nbsp;&nbsp;operationQueueRunningChangeBlock</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/port">&nbsp;&nbsp;&nbsp;&nbsp;port</option>
+	
+	<option value="//api/name/timeout">&nbsp;&nbsp;&nbsp;&nbsp;timeout</option>
+	
+	<option value="//api/name/username">&nbsp;&nbsp;&nbsp;&nbsp;username</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelAllOperations">&nbsp;&nbsp;&nbsp;&nbsp;- cancelAllOperations</option>
+	
+	<option value="//api/name/checkAccountOperation">&nbsp;&nbsp;&nbsp;&nbsp;- checkAccountOperation</option>
+	
+	<option value="//api/name/deleteMessagesOperationWithIndexes:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteMessagesOperationWithIndexes:</option>
+	
+	<option value="//api/name/disconnectOperation">&nbsp;&nbsp;&nbsp;&nbsp;- disconnectOperation</option>
+	
+	<option value="//api/name/fetchHeaderOperationWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchHeaderOperationWithIndex:</option>
+	
+	<option value="//api/name/fetchMessageOperationWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageOperationWithIndex:</option>
+	
+	<option value="//api/name/fetchMessagesOperation">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessagesOperation</option>
+	
+	<option value="//api/name/noopOperation">&nbsp;&nbsp;&nbsp;&nbsp;- noopOperation</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Operations">Operations</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authType">authType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkCertificateEnabled">checkCertificateEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionLogger">connectionLogger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionType">connectionType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dispatchQueue">dispatchQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hostname">hostname</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationQueueRunning">operationQueueRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationQueueRunningChangeBlock">operationQueueRunningChangeBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/port">port</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout">timeout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/username">username</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelAllOperations">cancelAllOperations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkAccountOperation">checkAccountOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteMessagesOperationWithIndexes:">deleteMessagesOperationWithIndexes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnectOperation">disconnectOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchHeaderOperationWithIndex:">fetchHeaderOperationWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageOperationWithIndex:">fetchMessageOperationWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessagesOperation">fetchMessagesOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noopOperation">noopOperation</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MCOPOPSession Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MCOPOPSession Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MCOPOPSession.h<br />MCOPOPSession.mm</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class implements asynchronous access to the POP3 protocol.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hostname">&nbsp;&nbsp;hostname</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/port">&nbsp;&nbsp;port</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authType">&nbsp;&nbsp;authType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionType">&nbsp;&nbsp;connectionType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkCertificateEnabled">&nbsp;&nbsp;checkCertificateEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionLogger">&nbsp;&nbsp;connectionLogger</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dispatchQueue">&nbsp;&nbsp;dispatchQueue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationQueueRunning">&nbsp;&nbsp;operationQueueRunning</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationQueueRunningChangeBlock">&nbsp;&nbsp;operationQueueRunningChangeBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelAllOperations">&ndash;&nbsp;cancelAllOperations</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Operations" name="task_Operations"></a>
+						<h3 class="subsubtitle task-title">Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessagesOperation">&ndash;&nbsp;fetchMessagesOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchHeaderOperationWithIndex:">&ndash;&nbsp;fetchHeaderOperationWithIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageOperationWithIndex:">&ndash;&nbsp;fetchMessageOperationWithIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteMessagesOperationWithIndexes:">&ndash;&nbsp;deleteMessagesOperationWithIndexes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnectOperation">&ndash;&nbsp;disconnectOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkAccountOperation">&ndash;&nbsp;checkAccountOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noopOperation">&ndash;&nbsp;noopOperation</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/authType" title="authType"></a>
+	<h3 class="subsubtitle method-title">authType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the authentication type to use to connect.
+<code>MCOAuthTypeSASLNone</code> means that it uses the clear-text is used (and is the default).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOAuthType authType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> <em>Important</em>: Over an encrypted connection like TLS, the <a href="#//api/name/password">password</a> will still be secure</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkCertificateEnabled" title="checkCertificateEnabled"></a>
+	<h3 class="subsubtitle method-title">checkCertificateEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When set to YES, the connection will fail if the certificate is incorrect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isCheckCertificateEnabled) BOOL checkCertificateEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionLogger" title="connectionLogger"></a>
+	<h3 class="subsubtitle method-title">connectionLogger</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets logger callback. The network traffic will be sent to this block.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) MCOConnectionLogger connectionLogger</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>[session setConnectionLogger:^(void * connectionID, <a href="../Constants/MCOConnectionLogType.html">MCOConnectionLogType</a> type, NSData * data) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionType" title="connectionType"></a>
+	<h3 class="subsubtitle method-title">connectionType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the encryption type to use.
+See <a href="../Constants/MCOConnectionType.html">MCOConnectionType</a> for more information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOConnectionType connectionType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dispatchQueue" title="dispatchQueue"></a>
+	<h3 class="subsubtitle method-title">dispatchQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property provides some hints to MCOPOPSession about where it&rsquo;s called from.
+It will make MCOPOPSession safe. It will also set all the callbacks of operations to run on this given queue.
+Defaults to the main queue.
+This property should be used only if there&rsquo;s performance issue using MCOPOPSession in the main thread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) dispatch_queue_t dispatchQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hostname" title="hostname"></a>
+	<h3 class="subsubtitle method-title">hostname</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the hostname of the POP3 server to connect to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *hostname</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationQueueRunning" title="operationQueueRunning"></a>
+	<h3 class="subsubtitle method-title">operationQueueRunning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value will be YES when asynchronous operations are running, else it will return NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isOperationQueueRunning) BOOL operationQueueRunning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationQueueRunningChangeBlock" title="operationQueueRunningChangeBlock"></a>
+	<h3 class="subsubtitle method-title">operationQueueRunningChangeBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets operation running callback. It will be called when operations start or stop running.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) MCOOperationQueueRunningChangeBlock operationQueueRunningChangeBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>[session setOperationQueueRunningChangeBlock:^{
+   if ([session isOperationQueueRunning]) {
+   }
+   else {
+   }
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the password of the account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *password</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/port" title="port"></a>
+	<h3 class="subsubtitle method-title">port</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the port of the POP3 server to connect to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) unsigned int port</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="subsubtitle method-title">timeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the timeout of the connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval timeout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="subsubtitle method-title">username</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the username of the account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *username</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelAllOperations" title="cancelAllOperations"></a>
+	<h3 class="subsubtitle method-title">cancelAllOperations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel all operations</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelAllOperations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkAccountOperation" title="checkAccountOperation"></a>
+	<h3 class="subsubtitle method-title">checkAccountOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will check whether the POP account is valid.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPOperation *)checkAccountOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOPOPOperation * op = [session checkAccountOperation];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteMessagesOperationWithIndexes:" title="deleteMessagesOperationWithIndexes:"></a>
+	<h3 class="subsubtitle method-title">deleteMessagesOperationWithIndexes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will delete the given messages.
+Will disconnect when finished.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPOperation *)deleteMessagesOperationWithIndexes:(MCOIndexSet *)<em>indexes</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIndexSet * indexes = [MCOIndexSet indexSet];
+ [indexes addIndex:1];
+ [indexes addIndex:2];
+ [indexes addIndex:3];
+ MCOPOPOperation * op = [session deleteMessagesOperationWithIndexes:indexes];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnectOperation" title="disconnectOperation"></a>
+	<h3 class="subsubtitle method-title">disconnectOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will disconnect the session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPOperation *)disconnectOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOPOPOperation.html">MCOPOPOperation</a> * op = [session disconnectOperation];
+[op start:^(NSError * error) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchHeaderOperationWithIndex:" title="fetchHeaderOperationWithIndex:"></a>
+	<h3 class="subsubtitle method-title">fetchHeaderOperationWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will fetch the header of the given message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPFetchHeaderOperation *)fetchHeaderOperationWithIndex:(unsigned int)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOPOPFetchHeaderOperation * op = [session fetchHeaderOperationWithIndex:idx];
+ [op start:^(NSError * error, MCOMessageHeader * header) {
+      // header is the parsed header of the message.
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageOperationWithIndex:" title="fetchMessageOperationWithIndex:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageOperationWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will fetch the content of the given message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPFetchMessageOperation *)fetchMessageOperationWithIndex:(unsigned int)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOPOPFetchMessageOperation * op = [session fetchMessageOperationWithIndex:idx];
+ [op start:^(NSError * error, NSData * messageData) {
+      // messageData is the RFC 822 formatted message data.
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessagesOperation" title="fetchMessagesOperation"></a>
+	<h3 class="subsubtitle method-title">fetchMessagesOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will fetch the list of messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPFetchMessagesOperation *)fetchMessagesOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOPOPFetchMessagesOperation * op = [session fetchMessagesOperation];
+ [op start:^(NSError * error, NSArray * messages) {
+    // messages is an array of MCOPOPMessageInfo
+    // [info index] can be used as reference for a given message in the other operations.
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noopOperation" title="noopOperation"></a>
+	<h3 class="subsubtitle method-title">noopOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will perform a No-Op operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOPOPOperation *)noopOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOPOPOperation.html">MCOPOPOperation</a> * op = [session noopOperation];
+[op start:^(NSError * error) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOPOPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MailCore2. All rights reserved. (Last updated: 2015-01-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

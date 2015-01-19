@@ -1,0 +1,4561 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MCOIMAPSession Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MailCore2 </a></h1>
+				<a id="developerHome" href="../index.html">MailCore2</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MCOIMAPSession Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/OAuth2Token">&nbsp;&nbsp;&nbsp;&nbsp;OAuth2Token</option>
+	
+	<option value="//api/name/allowsFolderConcurrentAccessEnabled">&nbsp;&nbsp;&nbsp;&nbsp;allowsFolderConcurrentAccessEnabled</option>
+	
+	<option value="//api/name/authType">&nbsp;&nbsp;&nbsp;&nbsp;authType</option>
+	
+	<option value="//api/name/checkCertificateEnabled">&nbsp;&nbsp;&nbsp;&nbsp;checkCertificateEnabled</option>
+	
+	<option value="//api/name/clientIdentity">&nbsp;&nbsp;&nbsp;&nbsp;clientIdentity</option>
+	
+	<option value="//api/name/connectionLogger">&nbsp;&nbsp;&nbsp;&nbsp;connectionLogger</option>
+	
+	<option value="//api/name/connectionType">&nbsp;&nbsp;&nbsp;&nbsp;connectionType</option>
+	
+	<option value="//api/name/defaultNamespace">&nbsp;&nbsp;&nbsp;&nbsp;defaultNamespace</option>
+	
+	<option value="//api/name/dispatchQueue">&nbsp;&nbsp;&nbsp;&nbsp;dispatchQueue</option>
+	
+	<option value="//api/name/gmailUserDisplayName">&nbsp;&nbsp;&nbsp;&nbsp;gmailUserDisplayName</option>
+	
+	<option value="//api/name/hostname">&nbsp;&nbsp;&nbsp;&nbsp;hostname</option>
+	
+	<option value="//api/name/maximumConnections">&nbsp;&nbsp;&nbsp;&nbsp;maximumConnections</option>
+	
+	<option value="//api/name/operationQueueRunning">&nbsp;&nbsp;&nbsp;&nbsp;operationQueueRunning</option>
+	
+	<option value="//api/name/operationQueueRunningChangeBlock">&nbsp;&nbsp;&nbsp;&nbsp;operationQueueRunningChangeBlock</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/port">&nbsp;&nbsp;&nbsp;&nbsp;port</option>
+	
+	<option value="//api/name/serverIdentity">&nbsp;&nbsp;&nbsp;&nbsp;serverIdentity</option>
+	
+	<option value="//api/name/timeout">&nbsp;&nbsp;&nbsp;&nbsp;timeout</option>
+	
+	<option value="//api/name/username">&nbsp;&nbsp;&nbsp;&nbsp;username</option>
+	
+	<option value="//api/name/voIPEnabled">&nbsp;&nbsp;&nbsp;&nbsp;voIPEnabled</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/appendMessageOperationWithFolder:messageData:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- appendMessageOperationWithFolder:messageData:flags:</option>
+	
+	<option value="//api/name/appendMessageOperationWithFolder:messageData:flags:customFlags:">&nbsp;&nbsp;&nbsp;&nbsp;- appendMessageOperationWithFolder:messageData:flags:customFlags:</option>
+	
+	<option value="//api/name/cancelAllOperations">&nbsp;&nbsp;&nbsp;&nbsp;- cancelAllOperations</option>
+	
+	<option value="//api/name/capabilityOperation">&nbsp;&nbsp;&nbsp;&nbsp;- capabilityOperation</option>
+	
+	<option value="//api/name/checkAccountOperation">&nbsp;&nbsp;&nbsp;&nbsp;- checkAccountOperation</option>
+	
+	<option value="//api/name/connectOperation">&nbsp;&nbsp;&nbsp;&nbsp;- connectOperation</option>
+	
+	<option value="//api/name/copyMessagesOperationWithFolder:uids:destFolder:">&nbsp;&nbsp;&nbsp;&nbsp;- copyMessagesOperationWithFolder:uids:destFolder:</option>
+	
+	<option value="//api/name/createFolderOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- createFolderOperation:</option>
+	
+	<option value="//api/name/deleteFolderOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteFolderOperation:</option>
+	
+	<option value="//api/name/disconnectOperation">&nbsp;&nbsp;&nbsp;&nbsp;- disconnectOperation</option>
+	
+	<option value="//api/name/expungeOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- expungeOperation:</option>
+	
+	<option value="//api/name/fetchAllFoldersOperation">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllFoldersOperation</option>
+	
+	<option value="//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:</option>
+	
+	<option value="//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:</option>
+	
+	<option value="//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentOperationWithFolder:number:partID:encoding:</option>
+	
+	<option value="//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:</option>
+	
+	<option value="//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:</option>
+	
+	<option value="//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:</option>
+	
+	<option value="//api/name/fetchMessageByUIDOperationWithFolder:uid:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageByUIDOperationWithFolder:uid:</option>
+	
+	<option value="//api/name/fetchMessageByUIDOperationWithFolder:uid:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageByUIDOperationWithFolder:uid:urgent:</option>
+	
+	<option value="//api/name/fetchMessageOperationWithFolder:number:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageOperationWithFolder:number:</option>
+	
+	<option value="//api/name/fetchMessageOperationWithFolder:number:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageOperationWithFolder:number:urgent:</option>
+	
+	<option value="//api/name/fetchMessageOperationWithFolder:uid:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageOperationWithFolder:uid:</option>
+	
+	<option value="//api/name/fetchMessageOperationWithFolder:uid:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessageOperationWithFolder:uid:urgent:</option>
+	
+	<option value="//api/name/fetchMessagesByNumberOperationWithFolder:requestKind:numbers:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessagesByNumberOperationWithFolder:requestKind:numbers:</option>
+	
+	<option value="//api/name/fetchMessagesByUIDOperationWithFolder:requestKind:uids:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessagesByUIDOperationWithFolder:requestKind:uids:</option>
+	
+	<option value="//api/name/fetchMessagesOperationWithFolder:requestKind:uids:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMessagesOperationWithFolder:requestKind:uids:</option>
+	
+	<option value="//api/name/fetchNamespaceOperation">&nbsp;&nbsp;&nbsp;&nbsp;- fetchNamespaceOperation</option>
+	
+	<option value="//api/name/fetchParsedMessageOperationWithFolder:number:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchParsedMessageOperationWithFolder:number:</option>
+	
+	<option value="//api/name/fetchParsedMessageOperationWithFolder:number:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchParsedMessageOperationWithFolder:number:urgent:</option>
+	
+	<option value="//api/name/fetchParsedMessageOperationWithFolder:uid:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchParsedMessageOperationWithFolder:uid:</option>
+	
+	<option value="//api/name/fetchParsedMessageOperationWithFolder:uid:urgent:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchParsedMessageOperationWithFolder:uid:urgent:</option>
+	
+	<option value="//api/name/fetchSubscribedFoldersOperation">&nbsp;&nbsp;&nbsp;&nbsp;- fetchSubscribedFoldersOperation</option>
+	
+	<option value="//api/name/folderInfoOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- folderInfoOperation:</option>
+	
+	<option value="//api/name/folderStatusOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- folderStatusOperation:</option>
+	
+	<option value="//api/name/htmlBodyRenderingOperationWithMessage:folder:">&nbsp;&nbsp;&nbsp;&nbsp;- htmlBodyRenderingOperationWithMessage:folder:</option>
+	
+	<option value="//api/name/htmlRenderingOperationWithMessage:folder:">&nbsp;&nbsp;&nbsp;&nbsp;- htmlRenderingOperationWithMessage:folder:</option>
+	
+	<option value="//api/name/identityOperationWithClientIdentity:">&nbsp;&nbsp;&nbsp;&nbsp;- identityOperationWithClientIdentity:</option>
+	
+	<option value="//api/name/idleOperationWithFolder:lastKnownUID:">&nbsp;&nbsp;&nbsp;&nbsp;- idleOperationWithFolder:lastKnownUID:</option>
+	
+	<option value="//api/name/noopOperation">&nbsp;&nbsp;&nbsp;&nbsp;- noopOperation</option>
+	
+	<option value="//api/name/plainTextBodyRenderingOperationWithMessage:folder:">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextBodyRenderingOperationWithMessage:folder:</option>
+	
+	<option value="//api/name/plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:</option>
+	
+	<option value="//api/name/plainTextRenderingOperationWithMessage:folder:">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextRenderingOperationWithMessage:folder:</option>
+	
+	<option value="//api/name/renameFolderOperation:otherName:">&nbsp;&nbsp;&nbsp;&nbsp;- renameFolderOperation:otherName:</option>
+	
+	<option value="//api/name/searchExpressionOperationWithFolder:expression:">&nbsp;&nbsp;&nbsp;&nbsp;- searchExpressionOperationWithFolder:expression:</option>
+	
+	<option value="//api/name/searchOperationWithFolder:kind:searchString:">&nbsp;&nbsp;&nbsp;&nbsp;- searchOperationWithFolder:kind:searchString:</option>
+	
+	<option value="//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- storeFlagsOperationWithFolder:numbers:kind:flags:</option>
+	
+	<option value="//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:">&nbsp;&nbsp;&nbsp;&nbsp;- storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:</option>
+	
+	<option value="//api/name/storeFlagsOperationWithFolder:uids:kind:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- storeFlagsOperationWithFolder:uids:kind:flags:</option>
+	
+	<option value="//api/name/storeFlagsOperationWithFolder:uids:kind:flags:customFlags:">&nbsp;&nbsp;&nbsp;&nbsp;- storeFlagsOperationWithFolder:uids:kind:flags:customFlags:</option>
+	
+	<option value="//api/name/storeLabelsOperationWithFolder:numbers:kind:labels:">&nbsp;&nbsp;&nbsp;&nbsp;- storeLabelsOperationWithFolder:numbers:kind:labels:</option>
+	
+	<option value="//api/name/storeLabelsOperationWithFolder:uids:kind:labels:">&nbsp;&nbsp;&nbsp;&nbsp;- storeLabelsOperationWithFolder:uids:kind:labels:</option>
+	
+	<option value="//api/name/subscribeFolderOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeFolderOperation:</option>
+	
+	<option value="//api/name/syncMessagesByUIDWithFolder:requestKind:uids:modSeq:">&nbsp;&nbsp;&nbsp;&nbsp;- syncMessagesByUIDWithFolder:requestKind:uids:modSeq:</option>
+	
+	<option value="//api/name/syncMessagesWithFolder:requestKind:uids:modSeq:">&nbsp;&nbsp;&nbsp;&nbsp;- syncMessagesWithFolder:requestKind:uids:modSeq:</option>
+	
+	<option value="//api/name/unsubscribeFolderOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- unsubscribeFolderOperation:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Folder Operations">Folder Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Message Actions">Message Actions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fetching Messages">Fetching Messages</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fetching Attachment Operations">Fetching Attachment Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_General IMAP Actions">General IMAP Actions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Search Operations">Search Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Rendering Operations">Rendering Operations</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth2Token">OAuth2Token</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowsFolderConcurrentAccessEnabled">allowsFolderConcurrentAccessEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authType">authType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkCertificateEnabled">checkCertificateEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clientIdentity">clientIdentity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionLogger">connectionLogger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionType">connectionType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultNamespace">defaultNamespace</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dispatchQueue">dispatchQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gmailUserDisplayName">gmailUserDisplayName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hostname">hostname</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumConnections">maximumConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationQueueRunning">operationQueueRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationQueueRunningChangeBlock">operationQueueRunningChangeBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/port">port</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serverIdentity">serverIdentity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout">timeout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/username">username</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/voIPEnabled">voIPEnabled</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendMessageOperationWithFolder:messageData:flags:">appendMessageOperationWithFolder:messageData:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendMessageOperationWithFolder:messageData:flags:customFlags:">appendMessageOperationWithFolder:messageData:flags:customFlags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelAllOperations">cancelAllOperations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/capabilityOperation">capabilityOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkAccountOperation">checkAccountOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectOperation">connectOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyMessagesOperationWithFolder:uids:destFolder:">copyMessagesOperationWithFolder:uids:destFolder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createFolderOperation:">createFolderOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteFolderOperation:">deleteFolderOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnectOperation">disconnectOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expungeOperation:">expungeOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllFoldersOperation">fetchAllFoldersOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:">fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:">fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:">fetchMessageAttachmentOperationWithFolder:number:partID:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:">fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:">fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:">fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageByUIDOperationWithFolder:uid:">fetchMessageByUIDOperationWithFolder:uid:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageByUIDOperationWithFolder:uid:urgent:">fetchMessageByUIDOperationWithFolder:uid:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageOperationWithFolder:number:">fetchMessageOperationWithFolder:number:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageOperationWithFolder:number:urgent:">fetchMessageOperationWithFolder:number:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageOperationWithFolder:uid:">fetchMessageOperationWithFolder:uid:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessageOperationWithFolder:uid:urgent:">fetchMessageOperationWithFolder:uid:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessagesByNumberOperationWithFolder:requestKind:numbers:">fetchMessagesByNumberOperationWithFolder:requestKind:numbers:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessagesByUIDOperationWithFolder:requestKind:uids:">fetchMessagesByUIDOperationWithFolder:requestKind:uids:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMessagesOperationWithFolder:requestKind:uids:">fetchMessagesOperationWithFolder:requestKind:uids:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchNamespaceOperation">fetchNamespaceOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchParsedMessageOperationWithFolder:number:">fetchParsedMessageOperationWithFolder:number:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchParsedMessageOperationWithFolder:number:urgent:">fetchParsedMessageOperationWithFolder:number:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchParsedMessageOperationWithFolder:uid:">fetchParsedMessageOperationWithFolder:uid:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchParsedMessageOperationWithFolder:uid:urgent:">fetchParsedMessageOperationWithFolder:uid:urgent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchSubscribedFoldersOperation">fetchSubscribedFoldersOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/folderInfoOperation:">folderInfoOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/folderStatusOperation:">folderStatusOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/htmlBodyRenderingOperationWithMessage:folder:">htmlBodyRenderingOperationWithMessage:folder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/htmlRenderingOperationWithMessage:folder:">htmlRenderingOperationWithMessage:folder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identityOperationWithClientIdentity:">identityOperationWithClientIdentity:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idleOperationWithFolder:lastKnownUID:">idleOperationWithFolder:lastKnownUID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noopOperation">noopOperation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextBodyRenderingOperationWithMessage:folder:">plainTextBodyRenderingOperationWithMessage:folder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:">plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextRenderingOperationWithMessage:folder:">plainTextRenderingOperationWithMessage:folder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renameFolderOperation:otherName:">renameFolderOperation:otherName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchExpressionOperationWithFolder:expression:">searchExpressionOperationWithFolder:expression:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchOperationWithFolder:kind:searchString:">searchOperationWithFolder:kind:searchString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:">storeFlagsOperationWithFolder:numbers:kind:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:">storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeFlagsOperationWithFolder:uids:kind:flags:">storeFlagsOperationWithFolder:uids:kind:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeFlagsOperationWithFolder:uids:kind:flags:customFlags:">storeFlagsOperationWithFolder:uids:kind:flags:customFlags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeLabelsOperationWithFolder:numbers:kind:labels:">storeLabelsOperationWithFolder:numbers:kind:labels:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeLabelsOperationWithFolder:uids:kind:labels:">storeLabelsOperationWithFolder:uids:kind:labels:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeFolderOperation:">subscribeFolderOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncMessagesByUIDWithFolder:requestKind:uids:modSeq:">syncMessagesByUIDWithFolder:requestKind:uids:modSeq:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncMessagesWithFolder:requestKind:uids:modSeq:">syncMessagesWithFolder:requestKind:uids:modSeq:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsubscribeFolderOperation:">unsubscribeFolderOperation:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MCOIMAPSession Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MCOIMAPSession Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MCOIMAPSession.h<br />MCOIMAPSession.mm</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the main IMAP class from which all operations are created</p>
+
+<p>After calling a method that returns an operation you must call start: on the instance
+to begin the operation.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hostname">&nbsp;&nbsp;hostname</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/port">&nbsp;&nbsp;port</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth2Token">&nbsp;&nbsp;OAuth2Token</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authType">&nbsp;&nbsp;authType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionType">&nbsp;&nbsp;connectionType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkCertificateEnabled">&nbsp;&nbsp;checkCertificateEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/voIPEnabled">&nbsp;&nbsp;voIPEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultNamespace">&nbsp;&nbsp;defaultNamespace</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clientIdentity">&nbsp;&nbsp;clientIdentity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serverIdentity">&nbsp;&nbsp;serverIdentity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gmailUserDisplayName">&nbsp;&nbsp;gmailUserDisplayName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowsFolderConcurrentAccessEnabled">&nbsp;&nbsp;allowsFolderConcurrentAccessEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumConnections">&nbsp;&nbsp;maximumConnections</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionLogger">&nbsp;&nbsp;connectionLogger</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dispatchQueue">&nbsp;&nbsp;dispatchQueue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationQueueRunning">&nbsp;&nbsp;operationQueueRunning</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationQueueRunningChangeBlock">&nbsp;&nbsp;operationQueueRunningChangeBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelAllOperations">&ndash;&nbsp;cancelAllOperations</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Folder Operations" name="task_Folder Operations"></a>
+						<h3 class="subsubtitle task-title">Folder Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/folderInfoOperation:">&ndash;&nbsp;folderInfoOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/folderStatusOperation:">&ndash;&nbsp;folderStatusOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchSubscribedFoldersOperation">&ndash;&nbsp;fetchSubscribedFoldersOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllFoldersOperation">&ndash;&nbsp;fetchAllFoldersOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renameFolderOperation:otherName:">&ndash;&nbsp;renameFolderOperation:otherName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteFolderOperation:">&ndash;&nbsp;deleteFolderOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createFolderOperation:">&ndash;&nbsp;createFolderOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeFolderOperation:">&ndash;&nbsp;subscribeFolderOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsubscribeFolderOperation:">&ndash;&nbsp;unsubscribeFolderOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expungeOperation:">&ndash;&nbsp;expungeOperation:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Message Actions" name="task_Message Actions"></a>
+						<h3 class="subsubtitle task-title">Message Actions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendMessageOperationWithFolder:messageData:flags:">&ndash;&nbsp;appendMessageOperationWithFolder:messageData:flags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendMessageOperationWithFolder:messageData:flags:customFlags:">&ndash;&nbsp;appendMessageOperationWithFolder:messageData:flags:customFlags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyMessagesOperationWithFolder:uids:destFolder:">&ndash;&nbsp;copyMessagesOperationWithFolder:uids:destFolder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeFlagsOperationWithFolder:uids:kind:flags:">&ndash;&nbsp;storeFlagsOperationWithFolder:uids:kind:flags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:">&ndash;&nbsp;storeFlagsOperationWithFolder:numbers:kind:flags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeFlagsOperationWithFolder:uids:kind:flags:customFlags:">&ndash;&nbsp;storeFlagsOperationWithFolder:uids:kind:flags:customFlags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:">&ndash;&nbsp;storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeLabelsOperationWithFolder:numbers:kind:labels:">&ndash;&nbsp;storeLabelsOperationWithFolder:numbers:kind:labels:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeLabelsOperationWithFolder:uids:kind:labels:">&ndash;&nbsp;storeLabelsOperationWithFolder:uids:kind:labels:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fetching Messages" name="task_Fetching Messages"></a>
+						<h3 class="subsubtitle task-title">Fetching Messages</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessagesByUIDOperationWithFolder:requestKind:uids:">&ndash;&nbsp;fetchMessagesByUIDOperationWithFolder:requestKind:uids:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessagesOperationWithFolder:requestKind:uids:">&ndash;&nbsp;fetchMessagesOperationWithFolder:requestKind:uids:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessagesByNumberOperationWithFolder:requestKind:numbers:">&ndash;&nbsp;fetchMessagesByNumberOperationWithFolder:requestKind:numbers:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncMessagesByUIDWithFolder:requestKind:uids:modSeq:">&ndash;&nbsp;syncMessagesByUIDWithFolder:requestKind:uids:modSeq:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncMessagesWithFolder:requestKind:uids:modSeq:">&ndash;&nbsp;syncMessagesWithFolder:requestKind:uids:modSeq:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageByUIDOperationWithFolder:uid:urgent:">&ndash;&nbsp;fetchMessageByUIDOperationWithFolder:uid:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageByUIDOperationWithFolder:uid:">&ndash;&nbsp;fetchMessageByUIDOperationWithFolder:uid:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageOperationWithFolder:uid:urgent:">&ndash;&nbsp;fetchMessageOperationWithFolder:uid:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageOperationWithFolder:uid:">&ndash;&nbsp;fetchMessageOperationWithFolder:uid:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageOperationWithFolder:number:urgent:">&ndash;&nbsp;fetchMessageOperationWithFolder:number:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageOperationWithFolder:number:">&ndash;&nbsp;fetchMessageOperationWithFolder:number:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchParsedMessageOperationWithFolder:uid:urgent:">&ndash;&nbsp;fetchParsedMessageOperationWithFolder:uid:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchParsedMessageOperationWithFolder:uid:">&ndash;&nbsp;fetchParsedMessageOperationWithFolder:uid:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchParsedMessageOperationWithFolder:number:urgent:">&ndash;&nbsp;fetchParsedMessageOperationWithFolder:number:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchParsedMessageOperationWithFolder:number:">&ndash;&nbsp;fetchParsedMessageOperationWithFolder:number:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fetching Attachment Operations" name="task_Fetching Attachment Operations"></a>
+						<h3 class="subsubtitle task-title">Fetching Attachment Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:">&ndash;&nbsp;fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:">&ndash;&nbsp;fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:">&ndash;&nbsp;fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:">&ndash;&nbsp;fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:">&ndash;&nbsp;fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:">&ndash;&nbsp;fetchMessageAttachmentOperationWithFolder:number:partID:encoding:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="General IMAP Actions" name="task_General IMAP Actions"></a>
+						<h3 class="subsubtitle task-title">General IMAP Actions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idleOperationWithFolder:lastKnownUID:">&ndash;&nbsp;idleOperationWithFolder:lastKnownUID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchNamespaceOperation">&ndash;&nbsp;fetchNamespaceOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identityOperationWithClientIdentity:">&ndash;&nbsp;identityOperationWithClientIdentity:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectOperation">&ndash;&nbsp;connectOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noopOperation">&ndash;&nbsp;noopOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkAccountOperation">&ndash;&nbsp;checkAccountOperation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/capabilityOperation">&ndash;&nbsp;capabilityOperation</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Search Operations" name="task_Search Operations"></a>
+						<h3 class="subsubtitle task-title">Search Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchOperationWithFolder:kind:searchString:">&ndash;&nbsp;searchOperationWithFolder:kind:searchString:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchExpressionOperationWithFolder:expression:">&ndash;&nbsp;searchExpressionOperationWithFolder:expression:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Rendering Operations" name="task_Rendering Operations"></a>
+						<h3 class="subsubtitle task-title">Rendering Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/htmlRenderingOperationWithMessage:folder:">&ndash;&nbsp;htmlRenderingOperationWithMessage:folder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/htmlBodyRenderingOperationWithMessage:folder:">&ndash;&nbsp;htmlBodyRenderingOperationWithMessage:folder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/plainTextRenderingOperationWithMessage:folder:">&ndash;&nbsp;plainTextRenderingOperationWithMessage:folder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:">&ndash;&nbsp;plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/plainTextBodyRenderingOperationWithMessage:folder:">&ndash;&nbsp;plainTextBodyRenderingOperationWithMessage:folder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnectOperation">&ndash;&nbsp;disconnectOperation</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth2Token" title="OAuth2Token"></a>
+	<h3 class="subsubtitle method-title">OAuth2Token</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the OAuth2 token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *OAuth2Token</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allowsFolderConcurrentAccessEnabled" title="allowsFolderConcurrentAccessEnabled"></a>
+	<h3 class="subsubtitle method-title">allowsFolderConcurrentAccessEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When set to YES, the session is allowed open to open several connections to the same folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowsFolderConcurrentAccessEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Some older IMAP servers don&rsquo;t like this</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authType" title="authType"></a>
+	<h3 class="subsubtitle method-title">authType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the authentication type to use to connect.
+<code>MCOAuthTypeSASLNone</code> means that it uses the clear-text is used (and is the default).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOAuthType authType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> <em>Important</em>: Over an encrypted connection like TLS, the <a href="#//api/name/password">password</a> will still be secure</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkCertificateEnabled" title="checkCertificateEnabled"></a>
+	<h3 class="subsubtitle method-title">checkCertificateEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When set to YES, the connection will fail if the certificate is incorrect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isCheckCertificateEnabled) BOOL checkCertificateEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clientIdentity" title="clientIdentity"></a>
+	<h3 class="subsubtitle method-title">clientIdentity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The identity of the IMAP client.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) MCOIMAPIdentity *clientIdentity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionLogger" title="connectionLogger"></a>
+	<h3 class="subsubtitle method-title">connectionLogger</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets logger callback. The network traffic will be sent to this block.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) MCOConnectionLogger connectionLogger</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>[session setConnectionLogger:^(void * connectionID, <a href="../Constants/MCOConnectionLogType.html">MCOConnectionLogType</a> type, NSData * data) {
+    NSLog(@&ldquo;%@&rdquo;, [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]);
+    // &hellip;
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionType" title="connectionType"></a>
+	<h3 class="subsubtitle method-title">connectionType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the encryption type to use.
+See <a href="../Constants/MCOConnectionType.html">MCOConnectionType</a> for more information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MCOConnectionType connectionType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultNamespace" title="defaultNamespace"></a>
+	<h3 class="subsubtitle method-title">defaultNamespace</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The default namespace.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) MCOIMAPNamespace *defaultNamespace</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dispatchQueue" title="dispatchQueue"></a>
+	<h3 class="subsubtitle method-title">dispatchQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property provides some hints to MCOIMAPSession about where it&rsquo;s called from.
+It will make MCOIMAPSession safe. It will also set all the callbacks of operations to run on this given queue.
+Defaults to the main queue.
+This property should be used only if there&rsquo;s performance issue using MCOIMAPSession in the main thread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) dispatch_queue_t dispatchQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gmailUserDisplayName" title="gmailUserDisplayName"></a>
+	<h3 class="subsubtitle method-title">gmailUserDisplayName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display name of the Gmail user. It will be nil if it&rsquo;s not a Gmail server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *gmailUserDisplayName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hostname" title="hostname"></a>
+	<h3 class="subsubtitle method-title">hostname</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the hostname of the IMAP server to connect to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *hostname</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumConnections" title="maximumConnections"></a>
+	<h3 class="subsubtitle method-title">maximumConnections</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maximum number of connections to the server allowed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) unsigned int maximumConnections</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationQueueRunning" title="operationQueueRunning"></a>
+	<h3 class="subsubtitle method-title">operationQueueRunning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value will be YES when asynchronous operations are running, else it will return NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isOperationQueueRunning) BOOL operationQueueRunning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationQueueRunningChangeBlock" title="operationQueueRunningChangeBlock"></a>
+	<h3 class="subsubtitle method-title">operationQueueRunningChangeBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets operation running callback. It will be called when operations start or stop running.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) MCOOperationQueueRunningChangeBlock operationQueueRunningChangeBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>[session setOperationQueueRunningChangeBlock:^{
+   if ([session isOperationQueueRunning]) {
+   }
+   else {
+   }
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the password of the account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *password</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/port" title="port"></a>
+	<h3 class="subsubtitle method-title">port</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the port of the IMAP server to connect to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) unsigned int port</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serverIdentity" title="serverIdentity"></a>
+	<h3 class="subsubtitle method-title">serverIdentity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The identity of the IMAP server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) MCOIMAPIdentity *serverIdentity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="subsubtitle method-title">timeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the timeout of the connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval timeout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="subsubtitle method-title">username</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the username of the account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *username</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/voIPEnabled" title="voIPEnabled"></a>
+	<h3 class="subsubtitle method-title">voIPEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When set to YES, VoIP capability will be enabled on the IMAP connection on iOS</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isVoIPEnabled) BOOL voIPEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appendMessageOperationWithFolder:messageData:flags:" title="appendMessageOperationWithFolder:messageData:flags:"></a>
+	<h3 class="subsubtitle method-title">appendMessageOperationWithFolder:messageData:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to add a message to a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPAppendMessageOperation *)appendMessageOperationWithFolder:(NSString *)<em>folder</em> messageData:(NSData *)<em>messageData</em> flags:(MCOMessageFlag)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session appendMessageOperationWithFolder:@"Sent Mail" messageData:rfc822Data flags:MCOMessageFlagNone];
+ [op start:^(NSError * error, uint32_t createdUID) {
+   if (error == nil) {
+     NSLog(@"created message with UID %lu", (unsigned long) createdUID);
+   }
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendMessageOperationWithFolder:messageData:flags:customFlags:" title="appendMessageOperationWithFolder:messageData:flags:customFlags:"></a>
+	<h3 class="subsubtitle method-title">appendMessageOperationWithFolder:messageData:flags:customFlags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to add a message with custom flags to a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPAppendMessageOperation *)appendMessageOperationWithFolder:(NSString *)<em>folder</em> messageData:(NSData *)<em>messageData</em> flags:(MCOMessageFlag)<em>flags</em> customFlags:(NSArray *)<em>customFlags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session appendMessageOperationWithFolder:@"Sent Mail" messageData:rfc822Data flags:MCOMessageFlagNone customFlags:@[@"$CNS-Greeting-On"]];
+ [op start:^(NSError * error, uint32_t createdUID) {
+   if (error == nil) {
+     NSLog(@"created message with UID %lu", (unsigned long) createdUID);
+   }
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelAllOperations" title="cancelAllOperations"></a>
+	<h3 class="subsubtitle method-title">cancelAllOperations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel all operations</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelAllOperations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/capabilityOperation" title="capabilityOperation"></a>
+	<h3 class="subsubtitle method-title">capabilityOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to request capabilities of the server.
+See <a href="../Constants/MCOIMAPCapability.html">MCOIMAPCapability</a> for the list of capabilities.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPCapabilityOperation *)capabilityOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> canIdle = NO;
+ MCOIMAPCapabilityOperation * op = [session capabilityOperation];
+ [op start:^(NSError * error, MCOIndexSet * capabilities) {
+   if ([capabilities containsIndex:MCOIMAPCapabilityIdle]) {
+     canIdle = YES;
+   }
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkAccountOperation" title="checkAccountOperation"></a>
+	<h3 class="subsubtitle method-title">checkAccountOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will check whether the IMAP account is valid.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)checkAccountOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session checkAccountOperation];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectOperation" title="connectOperation"></a>
+	<h3 class="subsubtitle method-title">connectOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will connect to the given IMAP server without authenticating.
+Useful for checking initial server capabilities.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)connectOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOIMAPOperation.html">MCOIMAPOperation</a> * op = [session connectOperation];
+[op start:^(NSError * error) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyMessagesOperationWithFolder:uids:destFolder:" title="copyMessagesOperationWithFolder:uids:destFolder:"></a>
+	<h3 class="subsubtitle method-title">copyMessagesOperationWithFolder:uids:destFolder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to copy messages to a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPCopyMessagesOperation *)copyMessagesOperationWithFolder:(NSString *)<em>folder</em> uids:(MCOIndexSet *)<em>uids</em> destFolder:(NSString *)<em>destFolder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPCopyMessagesOperation * op = [session copyMessagesOperationWithFolder:@"INBOX"
+                                                                         uids:[MCIndexSet indexSetWithIndex:456]
+                                                                   destFolder:@"Cocoa"];
+ [op start:^(NSError * error, NSDictionary * uidMapping) {
+      NSLog(@"copied to folder with UID mapping %@", uidMapping);
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createFolderOperation:" title="createFolderOperation:"></a>
+	<h3 class="subsubtitle method-title">createFolderOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that creates a new folder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)createFolderOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session createFolderOperation:@"holidays 2013"];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteFolderOperation:" title="deleteFolderOperation:"></a>
+	<h3 class="subsubtitle method-title">deleteFolderOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an operation for deleting a folder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)deleteFolderOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session deleteFolderOperation:@"holidays 2009"];
+ [op start:^(NSError * error) {
+ }]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnectOperation" title="disconnectOperation"></a>
+	<h3 class="subsubtitle method-title">disconnectOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to disconnect the session.
+It will disconnect all the sockets created by the session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)disconnectOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPOperation * op = [session disconnectOperation];
+[op start:^(NSError * error) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expungeOperation:" title="expungeOperation:"></a>
+	<h3 class="subsubtitle method-title">expungeOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to expunge a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)expungeOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session expungeOperation:@"INBOX"];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllFoldersOperation" title="fetchAllFoldersOperation"></a>
+	<h3 class="subsubtitle method-title">fetchAllFoldersOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that gets all folders</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchFoldersOperation *)fetchAllFoldersOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchFoldersOperation * op = [session fetchAllFoldersOperation];
+ [op start:^(NSError * error, NSArray *folders) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:" title="fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentByUIDOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  Example 1:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentByUIDOperationWithFolder:@"INBOX"
+                                                                                         uid:456
+                                                                                      partID:@"1.2"
+                                                                                    encoding:MCOEncodingBase64];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+
+<p>  Example 2:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentByUIDOperationWithFolder:@"INBOX"
+                                                                                         uid:[message uid]
+                                                                                      partID:[part partID]
+                                                                                    encoding:[part encoding]];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:" title="fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentByUIDOperationWithFolder:uid:partID:encoding:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentByUIDOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentByUIDOperationWithFolder:@"INBOX"
+                                                                                         uid:456
+                                                                                      partID:@"1.2"
+                                                                                    encoding:MCOEncodingBase64
+                                                                                      urgent:YES];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:" title="fetchMessageAttachmentOperationWithFolder:number:partID:encoding:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentOperationWithFolder:number:partID:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  Example 1:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                 number:42
+                                                                                 partID:@"1.2"
+                                                                               encoding:MCOEncodingBase64];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+
+<p>  Example 2:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                 number:[message sequenceNumber]
+                                                                                 partID:[part partID]
+                                                                               encoding:[part encoding]];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:" title="fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentOperationWithFolder:number:partID:encoding:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                         uid:456
+                                                                                      partID:@"1.2"
+                                                                                    encoding:MCOEncodingBase64
+                                                                                      urgent:YES];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:" title="fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  Example 1:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                    uid:456
+                                                                                 partID:@"1.2"
+                                                                               encoding:MCOEncodingBase64];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+
+<p>  Example 2:</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                    uid:[message uid]
+                                                                                 partID:[part partID]
+                                                                               encoding:[part encoding]];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:" title="fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageAttachmentOperationWithFolder:uid:partID:encoding:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch an attachment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageAttachmentOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> partID:(NSString *)<em>partID</em> encoding:(MCOEncoding)<em>encoding</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageAttachmentOperationWithFolder:@"INBOX"
+                                                                                         uid:456
+                                                                                      partID:@"1.2"
+                                                                                    encoding:MCOEncodingBase64
+                                                                                      urgent:YES];
+ [op start:^(NSError * error, NSData * partData) {
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageByUIDOperationWithFolder:uid:" title="fetchMessageByUIDOperationWithFolder:uid:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageByUIDOperationWithFolder:uid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageByUIDOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageByUIDOperationWithFolder:@"INBOX" uid:456];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageByUIDOperationWithFolder:uid:urgent:" title="fetchMessageByUIDOperationWithFolder:uid:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageByUIDOperationWithFolder:uid:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageByUIDOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageByUIDOperationWithFolder:@"INBOX" uid:456 urgent:NO];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageOperationWithFolder:number:" title="fetchMessageOperationWithFolder:number:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageOperationWithFolder:number:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageOperationWithFolder:@"INBOX" number:42];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageOperationWithFolder:number:urgent:" title="fetchMessageOperationWithFolder:number:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageOperationWithFolder:number:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageOperationWithFolder:@"INBOX" number:42 urgent:NO];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageOperationWithFolder:uid:" title="fetchMessageOperationWithFolder:uid:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageOperationWithFolder:uid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageOperationWithFolder:@"INBOX" uid:456];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessageOperationWithFolder:uid:urgent:" title="fetchMessageOperationWithFolder:uid:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchMessageOperationWithFolder:uid:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchContentOperation *)fetchMessageOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<pre><code> MCOIMAPFetchContentOperation * op = [session fetchMessageOperationWithFolder:@"INBOX" uid:456 urgent:NO];
+ [op start:^(NSError * error, NSData * messageData) {
+    MCOMessageParser * parser = [MCOMessageParser messageParserWithData:messageData]
+ }];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessagesByNumberOperationWithFolder:requestKind:numbers:" title="fetchMessagesByNumberOperationWithFolder:requestKind:numbers:"></a>
+	<h3 class="subsubtitle method-title">fetchMessagesByNumberOperationWithFolder:requestKind:numbers:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch messages by (sequence) number.
+For example: show 50 most recent uids.
+     NSString <em>folder = @&ldquo;INBOX&rdquo;;
+     <a href="../Classes/MCOIMAPFolderInfoOperation.html">MCOIMAPFolderInfoOperation</a> </em>folderInfo = [session folderInfoOperation:folder];</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchMessagesOperation *)fetchMessagesByNumberOperationWithFolder:(NSString *)<em>folder</em> requestKind:(MCOIMAPMessagesRequestKind)<em>requestKind</em> numbers:(MCOIndexSet *)<em>numbers</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> [folderInfo start:^(NSError *error, MCOIMAPFolderInfo *info) {
+     int numberOfMessages = 50;
+     numberOfMessages -= 1;
+     MCOIndexSet *numbers = [MCOIndexSet indexSetWithRange:MCORangeMake([info messageCount] - numberOfMessages, numberOfMessages)];
+
+     MCOIMAPFetchMessagesOperation *fetchOperation = [session fetchMessagesByNumberOperationWithFolder:folder
+                                                                                           requestKind:MCOIMAPMessagesRequestKindUid
+                                                                                               numbers:numbers];
+
+     [fetchOperation start:^(NSError *error, NSArray *messages, MCOIndexSet *vanishedMessages) {
+         for (MCOIMAPMessage * message in messages) {
+             NSLog(@"%u", [message uid]);
+         }
+     }];
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessagesByUIDOperationWithFolder:requestKind:uids:" title="fetchMessagesByUIDOperationWithFolder:requestKind:uids:"></a>
+	<h3 class="subsubtitle method-title">fetchMessagesByUIDOperationWithFolder:requestKind:uids:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch messages by UID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchMessagesOperation *)fetchMessagesByUIDOperationWithFolder:(NSString *)<em>folder</em> requestKind:(MCOIMAPMessagesRequestKind)<em>requestKind</em> uids:(MCOIndexSet *)<em>uids</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchMessagesOperation * op = [session fetchMessagesByUIDOperationWithFolder:@"INBOX"
+                                                                         requestKind:MCOIMAPMessagesRequestKindHeaders | MCOIMAPMessagesRequestKindStructure
+                                                                                uids:MCORangeMake(1, UINT64_MAX)];
+ [op start:^(NSError * error, NSArray * messages, MCOIndexSet * vanishedMessages) {
+    for(MCOIMAPMessage * msg in messages) {
+      NSLog(@"%lu: %@", [msg uid], [msg header]);
+    }
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMessagesOperationWithFolder:requestKind:uids:" title="fetchMessagesOperationWithFolder:requestKind:uids:"></a>
+	<h3 class="subsubtitle method-title">fetchMessagesOperationWithFolder:requestKind:uids:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch messages by UID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchMessagesOperation *)fetchMessagesOperationWithFolder:(NSString *)<em>folder</em> requestKind:(MCOIMAPMessagesRequestKind)<em>requestKind</em> uids:(MCOIndexSet *)<em>uids</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchMessagesOperation * op = [session fetchMessagesOperationWithFolder:@"INBOX"
+                                                                    requestKind:MCOIMAPMessagesRequestKindHeaders | MCOIMAPMessagesRequestKindStructure
+                                                                           uids:MCORangeMake(1, UINT64_MAX)];
+ [op start:^(NSError * error, NSArray * messages, MCOIndexSet * vanishedMessages) {
+    for(MCOIMAPMessage * msg in messages) {
+      NSLog(@"%lu: %@", [msg uid], [msg header]);
+    }
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchNamespaceOperation" title="fetchNamespaceOperation"></a>
+	<h3 class="subsubtitle method-title">fetchNamespaceOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the list of namespaces.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchNamespaceOperation *)fetchNamespaceOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchNamespaceOperation * op = [session fetchNamespaceOperation];
+ [op start:^(NSError * error, NSDictionary * namespaces) {
+   if (error != nil)
+     return;
+   MCOIMAPNamespace * ns = [namespace objectForKey:MCOIMAPNamespacePersonal];
+   NSString * path = [ns pathForComponents:[NSArray arrayWithObject:]];
+   MCOIMAPOperation * createOp = [session createFolderOperation:foobar];
+   [createOp start:^(NSError * error) {
+   }];
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchParsedMessageOperationWithFolder:number:" title="fetchParsedMessageOperationWithFolder:number:"></a>
+	<h3 class="subsubtitle method-title">fetchParsedMessageOperationWithFolder:number:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the parsed content of a message, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchParsedContentOperation *)fetchParsedMessageOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOIMAPFetchParsedContentOperation.html">MCOIMAPFetchParsedContentOperation</a> * op = [session fetchParsedMessageOperationWithFolder:@&ldquo;INBOX&rdquo; number:42];
+[op start:^(NSError * error, <a href="../Classes/MCOMessageParser.html">MCOMessageParser</a> * parser) {</p>
+
+<p>}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchParsedMessageOperationWithFolder:number:urgent:" title="fetchParsedMessageOperationWithFolder:number:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchParsedMessageOperationWithFolder:number:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the parsed content of a message, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchParsedContentOperation *)fetchParsedMessageOperationWithFolder:(NSString *)<em>folder</em> number:(uint32_t)<em>number</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<p><a href="../Classes/MCOIMAPFetchParsedContentOperation.html">MCOIMAPFetchParsedContentOperation</a> * op = [session fetchParsedMessageOperationWithFolder:@&ldquo;INBOX&rdquo; number:42 urgent:NO];
+[op start:^(NSError * error, <a href="../Classes/MCOMessageParser.html">MCOMessageParser</a> * parser) {</p>
+
+<p>}];</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchParsedMessageOperationWithFolder:uid:" title="fetchParsedMessageOperationWithFolder:uid:"></a>
+	<h3 class="subsubtitle method-title">fetchParsedMessageOperationWithFolder:uid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the parsed content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchParsedContentOperation *)fetchParsedMessageOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOIMAPFetchParsedContentOperation.html">MCOIMAPFetchParsedContentOperation</a> * op = [session fetchParsedMessageOperationWithFolder:@&ldquo;INBOX&rdquo; uid:456];
+[op start:^(NSError * error, <a href="../Classes/MCOMessageParser.html">MCOMessageParser</a> * parser) {</p>
+
+<p>}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchParsedMessageOperationWithFolder:uid:urgent:" title="fetchParsedMessageOperationWithFolder:uid:urgent:"></a>
+	<h3 class="subsubtitle method-title">fetchParsedMessageOperationWithFolder:uid:urgent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to fetch the parsed content of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchParsedContentOperation *)fetchParsedMessageOperationWithFolder:(NSString *)<em>folder</em> uid:(uint32_t)<em>uid</em> urgent:(BOOL)<em>urgent</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urgent</em></dt>
+			<dd><p>is set to YES, an additional connection to the same folder might be opened to fetch the content.</p>
+
+<p><a href="../Classes/MCOIMAPFetchParsedContentOperation.html">MCOIMAPFetchParsedContentOperation</a> * op = [session fetchParsedMessageOperationWithFolder:@&ldquo;INBOX&rdquo; uid:456 urgent:NO];
+[op start:^(NSError * error, <a href="../Classes/MCOMessageParser.html">MCOMessageParser</a> * parser) {</p>
+
+<p>}];</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchSubscribedFoldersOperation" title="fetchSubscribedFoldersOperation"></a>
+	<h3 class="subsubtitle method-title">fetchSubscribedFoldersOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that gets the list of subscribed folders.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchFoldersOperation *)fetchSubscribedFoldersOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPFetchFoldersOperation * op = [session fetchSubscribedFoldersOperation];
+[op start:^(NSError * error, NSArray * folders) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/folderInfoOperation:" title="folderInfoOperation:"></a>
+	<h3 class="subsubtitle method-title">folderInfoOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that retrieves folder metadata (like UIDNext)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFolderInfoOperation *)folderInfoOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFolderInfoOperation * op = [session folderInfoOperation:@"INBOX"];
+ [op start:^(NSError *error, MCOIMAPFolderInfo * info) {
+      NSLog(@"UIDNEXT: %lu", (unsigned long) [info uidNext]);
+      NSLog(@"UIDVALIDITY: %lu", (unsigned long) [info uidValidity]);
+      NSLog(@"HIGHESTMODSEQ: %llu", (unsigned long long) [info modSequenceValue]);
+      NSLog(@"messages count: %lu", [info messageCount]);
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/folderStatusOperation:" title="folderStatusOperation:"></a>
+	<h3 class="subsubtitle method-title">folderStatusOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that retrieves folder status (like UIDNext - Unseen -)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFolderStatusOperation *)folderStatusOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPFolderStatusOperation * op = [session folderStatusOperation:@"INBOX"];
+[op start:^(NSError *error, MCOIMAPFolderStatus * info) {
+    NSLog(@"UIDNEXT: %lu", (unsigned long) [info uidNext]);
+    NSLog(@"UIDVALIDITY: %lu", (unsigned long) [info uidValidity]);
+    NSLog(@"messages count: %lu", [info totalMessages]);
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/htmlBodyRenderingOperationWithMessage:folder:" title="htmlBodyRenderingOperationWithMessage:folder:"></a>
+	<h3 class="subsubtitle method-title">htmlBodyRenderingOperationWithMessage:folder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to render the HTML body of a message to be displayed in a web view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPMessageRenderingOperation *)htmlBodyRenderingOperationWithMessage:(MCOIMAPMessage *)<em>message</em> folder:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPMessageRenderingOperation * op = [session htmlBodyRenderingOperationWithMessage:msg
+                                                                                folder:@"INBOX"];
+
+[op start:^(NSString * htmlString, NSError * error) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/htmlRenderingOperationWithMessage:folder:" title="htmlRenderingOperationWithMessage:folder:"></a>
+	<h3 class="subsubtitle method-title">htmlRenderingOperationWithMessage:folder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to render the HTML version of a message to be displayed in a web view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPMessageRenderingOperation *)htmlRenderingOperationWithMessage:(MCOIMAPMessage *)<em>message</em> folder:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPMessageRenderingOperation * op = [session htmlRenderingOperationWithMessage:msg
+                                                                        folder:@"INBOX"];
+
+[op start:^(NSString * htmlString, NSError * error) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/identityOperationWithClientIdentity:" title="identityOperationWithClientIdentity:"></a>
+	<h3 class="subsubtitle method-title">identityOperationWithClientIdentity:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to send the client or get the server identity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPIdentityOperation *)identityOperationWithClientIdentity:(MCOIMAPIdentity *)<em>identity</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPIdentity * identity = [MCOIMAPIdentity identityWithVendor:@"Mozilla" name:@"Thunderbird" version:@"17.0.5"];
+ MCOIMAPIdentityOperation * op = [session identityOperationWithClientIdentity:identity];
+ [op start:^(NSError * error, NSDictionary * serverIdentity) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idleOperationWithFolder:lastKnownUID:" title="idleOperationWithFolder:lastKnownUID:"></a>
+	<h3 class="subsubtitle method-title">idleOperationWithFolder:lastKnownUID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to wait for something to happen in the folder.
+See <a href="http://tools.ietf.org/html/rfc2177">RFC2177</a> for me info.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPIdleOperation *)idleOperationWithFolder:(NSString *)<em>folder</em> lastKnownUID:(uint32_t)<em>lastKnownUID</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPIdleOperation * op = [session idleOperationWithFolder:@"INBOX"
+                                                 lastKnownUID:0];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noopOperation" title="noopOperation"></a>
+	<h3 class="subsubtitle method-title">noopOperation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation that will perform a No-Op operation on the given IMAP server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)noopOperation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOIMAPOperation.html">MCOIMAPOperation</a> * op = [session noopOperation];
+[op start:^(NSError * error) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/plainTextBodyRenderingOperationWithMessage:folder:" title="plainTextBodyRenderingOperationWithMessage:folder:"></a>
+	<h3 class="subsubtitle method-title">plainTextBodyRenderingOperationWithMessage:folder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to render the plain text body of a message.
+All end of line will be removed and white spaces cleaned up.
+This method can be used to generate the summary of the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPMessageRenderingOperation *)plainTextBodyRenderingOperationWithMessage:(MCOIMAPMessage *)<em>message</em> folder:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MCOIMAPMessageRenderingOperation.html">MCOIMAPMessageRenderingOperation</a> * op = [session plainTextBodyRenderingOperationWithMessage:msg
+folder:@&ldquo;INBOX&rdquo;];</p>
+
+<p>[op start:^(NSString * htmlString, NSError * error) {
+}];</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:" title="plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:"></a>
+	<h3 class="subsubtitle method-title">plainTextBodyRenderingOperationWithMessage:folder:stripWhitespace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to render the plain text body of a message.
+All end of line will be removed and white spaces cleaned up if requested.
+This method can be used to generate the summary of the message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPMessageRenderingOperation *)plainTextBodyRenderingOperationWithMessage:(MCOIMAPMessage *)<em>message</em> folder:(NSString *)<em>folder</em> stripWhitespace:(BOOL)<em>stripWhitespace</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPMessageRenderingOperation * op = [session plainTextBodyRenderingOperationWithMessage:msg
+                                                                                     folder:@"INBOX"
+                                                                            stripWhitespace:YES];
+
+[op start:^(NSString * htmlString, NSError * error) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/plainTextRenderingOperationWithMessage:folder:" title="plainTextRenderingOperationWithMessage:folder:"></a>
+	<h3 class="subsubtitle method-title">plainTextRenderingOperationWithMessage:folder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to render the plain text version of a message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPMessageRenderingOperation *)plainTextRenderingOperationWithMessage:(MCOIMAPMessage *)<em>message</em> folder:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>MCOIMAPMessageRenderingOperation * op = [session plainTextRenderingOperationWithMessage:msg
+                                                                                 folder:@"INBOX"];
+
+[op start:^(NSString * htmlString, NSError * error) {
+}];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renameFolderOperation:otherName:" title="renameFolderOperation:otherName:"></a>
+	<h3 class="subsubtitle method-title">renameFolderOperation:otherName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an operation for renaming a folder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)renameFolderOperation:(NSString *)<em>folder</em> otherName:(NSString *)<em>otherName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session renameFolderOperation:@"my documents" otherName:@"Documents"];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchExpressionOperationWithFolder:expression:" title="searchExpressionOperationWithFolder:expression:"></a>
+	<h3 class="subsubtitle method-title">searchExpressionOperationWithFolder:expression:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to search for messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPSearchOperation *)searchExpressionOperationWithFolder:(NSString *)<em>folder</em> expression:(MCOIMAPSearchExpression *)<em>expression</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPSearchExpression * expr = [MCOIMAPSearchExpression searchFrom:@"laura@etpan.org"]
+ MCOIMAPSearchOperation * op = [session searchExpressionOperationWithFolder:@"INBOX"
+                                                                 expression:expr];
+ [op start:^(NSError * error, MCOIndexSet * searchResult) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchOperationWithFolder:kind:searchString:" title="searchOperationWithFolder:kind:searchString:"></a>
+	<h3 class="subsubtitle method-title">searchOperationWithFolder:kind:searchString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to search for messages with a simple match.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPSearchOperation *)searchOperationWithFolder:(NSString *)<em>folder</em> kind:(MCOIMAPSearchKind)<em>kind</em> searchString:(NSString *)<em>searchString</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPSearchOperation * op = [session searchOperationWithFolder:@"INBOX"
+                                                             kind:MCOIMAPSearchKindFrom
+                                                     searchString:@"laura"];
+ [op start:^(NSError * error, MCOIndexSet * searchResult) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:" title="storeFlagsOperationWithFolder:numbers:kind:flags:"></a>
+	<h3 class="subsubtitle method-title">storeFlagsOperationWithFolder:numbers:kind:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change flags of messages, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeFlagsOperationWithFolder:(NSString *)<em>folder</em> numbers:(MCOIndexSet *)<em>numbers</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> flags:(MCOMessageFlag)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the seen flag to the message with the sequence number number 42.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeFlagsOperationWithFolder:@"INBOX"
+                                                        numbers:[MCOIndexSet indexSetWithIndex:42]
+                                                           kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          flags:MCOMessageFlagSeen];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:" title="storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:"></a>
+	<h3 class="subsubtitle method-title">storeFlagsOperationWithFolder:numbers:kind:flags:customFlags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change flags and custom flags of messages, using IMAP sequence number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeFlagsOperationWithFolder:(NSString *)<em>folder</em> numbers:(MCOIndexSet *)<em>numbers</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> flags:(MCOMessageFlag)<em>flags</em> customFlags:(NSArray *)<em>customFlags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the seen flag and $CNS-Greeting-On flag to the message with the sequence number 42.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeFlagsOperationWithFolder:@"INBOX"
+                                                        numbers:[MCOIndexSet indexSetWithIndex:42]
+                                                           kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          flags:MCOMessageFlagSeen
+                                                    customFlags:@["$CNS-Greeting-On"]];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeFlagsOperationWithFolder:uids:kind:flags:" title="storeFlagsOperationWithFolder:uids:kind:flags:"></a>
+	<h3 class="subsubtitle method-title">storeFlagsOperationWithFolder:uids:kind:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change flags of messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeFlagsOperationWithFolder:(NSString *)<em>folder</em> uids:(MCOIndexSet *)<em>uids</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> flags:(MCOMessageFlag)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the seen flag to the message with UID 456.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeFlagsOperationWithFolder:@"INBOX"
+                                                           uids:[MCOIndexSet indexSetWithIndex:456]
+                                                           kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          flags:MCOMessageFlagSeen];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeFlagsOperationWithFolder:uids:kind:flags:customFlags:" title="storeFlagsOperationWithFolder:uids:kind:flags:customFlags:"></a>
+	<h3 class="subsubtitle method-title">storeFlagsOperationWithFolder:uids:kind:flags:customFlags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change flags and custom flags of messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeFlagsOperationWithFolder:(NSString *)<em>folder</em> uids:(MCOIndexSet *)<em>uids</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> flags:(MCOMessageFlag)<em>flags</em> customFlags:(NSArray *)<em>customFlags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the seen flag and $CNS-Greeting-On flag to the message with UID 456.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeFlagsOperationWithFolder:@"INBOX"
+                                                           uids:[MCOIndexSet indexSetWithIndex:456]
+                                                           kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          flags:MCOMessageFlagSeen
+                                                    customFlags:@["$CNS-Greeting-On"]];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeLabelsOperationWithFolder:numbers:kind:labels:" title="storeLabelsOperationWithFolder:numbers:kind:labels:"></a>
+	<h3 class="subsubtitle method-title">storeLabelsOperationWithFolder:numbers:kind:labels:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change labels of messages. Intended for Gmail</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeLabelsOperationWithFolder:(NSString *)<em>folder</em> numbers:(MCOIndexSet *)<em>numbers</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> labels:(NSArray *)<em>labels</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the label &ldquo;Home&rdquo; flag to the message with UID 42.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeLabelsOperationWithFolder:@"INBOX"
+                                                         numbers:[MCOIndexSet indexSetWithIndex:42]
+                                                            kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          labels:[NSArray arrayWithObject:@"Home"]];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeLabelsOperationWithFolder:uids:kind:labels:" title="storeLabelsOperationWithFolder:uids:kind:labels:"></a>
+	<h3 class="subsubtitle method-title">storeLabelsOperationWithFolder:uids:kind:labels:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to change labels of messages. Intended for Gmail</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)storeLabelsOperationWithFolder:(NSString *)<em>folder</em> uids:(MCOIndexSet *)<em>uids</em> kind:(MCOIMAPStoreFlagsRequestKind)<em>kind</em> labels:(NSArray *)<em>labels</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example: Adds the label &ldquo;Home&rdquo; flag to the message with UID 456.</p>
+
+<pre><code> MCOIMAPOperation * op = [session storeLabelsOperationWithFolder:@"INBOX"
+                                                            uids:[MCOIndexSet indexSetWithIndex:456]
+                                                            kind:MCOIMAPStoreFlagsRequestKindAdd
+                                                          labels:[NSArray arrayWithObject:@"Home"]];
+ [op start:^(NSError * error) {
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeFolderOperation:" title="subscribeFolderOperation:"></a>
+	<h3 class="subsubtitle method-title">subscribeFolderOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to subscribe to a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)subscribeFolderOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session createFolderOperation:@"holidays 2013"];
+ [op start:^(NSError * error) {
+   if (error != nil)
+     return;
+   MCOIMAPOperation * op = [session subscribeFolderOperation:@"holidays 2013"];
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncMessagesByUIDWithFolder:requestKind:uids:modSeq:" title="syncMessagesByUIDWithFolder:requestKind:uids:modSeq:"></a>
+	<h3 class="subsubtitle method-title">syncMessagesByUIDWithFolder:requestKind:uids:modSeq:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to sync the last changes related to the given message list given a modSeq.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchMessagesOperation *)syncMessagesByUIDWithFolder:(NSString *)<em>folder</em> requestKind:(MCOIMAPMessagesRequestKind)<em>requestKind</em> uids:(MCOIndexSet *)<em>uids</em> modSeq:(uint64_t)<em>modSeq</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchMessagesOperation * op = [session syncMessagesByUIDWithFolder:@"INBOX"
+                                                               requestKind:MCOIMAPMessagesRequestKindUID
+                                                                      uids:MCORangeMake(1, UINT64_MAX)
+                                                                    modSeq:lastModSeq];
+ [op start:^(NSError * error, NSArray * messages, MCOIndexSet * vanishedMessages) {
+   NSLog(@"added or modified messages: %@", messages);
+   NSLog(@"deleted messages: %@", vanishedMessages);
+ }];
+</code></pre>
+
+<p>@warn <em>Important</em>: This is only for servers that sup<a href="#//api/name/port">port</a> Conditional Store. See <a href="http://tools.ietf.org/html/rfc4551">RFC4551</a>
+vanishedMessages will be set only for servers that sup<a href="#//api/name/port">port</a> QRESYNC. See <a href="http://tools.ietf.org/html/rfc5162">RFC5162</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncMessagesWithFolder:requestKind:uids:modSeq:" title="syncMessagesWithFolder:requestKind:uids:modSeq:"></a>
+	<h3 class="subsubtitle method-title">syncMessagesWithFolder:requestKind:uids:modSeq:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to sync the last changes related to the given message list given a modSeq.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPFetchMessagesOperation *)syncMessagesWithFolder:(NSString *)<em>folder</em> requestKind:(MCOIMAPMessagesRequestKind)<em>requestKind</em> uids:(MCOIndexSet *)<em>uids</em> modSeq:(uint64_t)<em>modSeq</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPFetchMessagesOperation * op = [session syncMessagesWithFolder:@"INBOX"
+                                                          requestKind:MCOIMAPMessagesRequestKindUID
+                                                                 uids:MCORangeMake(1, UINT64_MAX)
+                                                               modSeq:lastModSeq];
+ [op start:^(NSError * error, NSArray * messages, MCOIndexSet * vanishedMessages) {
+   NSLog(@"added or modified messages: %@", messages);
+   NSLog(@"deleted messages: %@", vanishedMessages);
+ }];
+</code></pre>
+
+<p>@warn <em>Important</em>: This is only for servers that sup<a href="#//api/name/port">port</a> Conditional Store. See <a href="http://tools.ietf.org/html/rfc4551">RFC4551</a>
+vanishedMessages will be set only for servers that sup<a href="#//api/name/port">port</a> QRESYNC. See <a href="http://tools.ietf.org/html/rfc5162">RFC5162</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsubscribeFolderOperation:" title="unsubscribeFolderOperation:"></a>
+	<h3 class="subsubtitle method-title">unsubscribeFolderOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an operation to unsubscribe from a folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MCOIMAPOperation *)unsubscribeFolderOperation:(NSString *)<em>folder</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code> MCOIMAPOperation * op = [session unsubscribeFolderOperation:@"holidays 2009"];
+ [op start:^(NSError * error) {
+   if (error != nil)
+     return;
+   MCOIMAPOperation * op = [session deleteFolderOperation:@"holidays 2009"]
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MCOIMAPSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MailCore2. All rights reserved. (Last updated: 2015-01-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
