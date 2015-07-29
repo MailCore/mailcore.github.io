@@ -42,6 +42,7 @@ body {
 	left: 61px;
 	top: 136px;
     border-bottom:0px;
+	max-width: 450px;
 }
 
 #title-header > h1 {
